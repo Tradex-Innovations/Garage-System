@@ -3871,4 +3871,430 @@ input:disabled, select:disabled, textarea:disabled {
   }
 }
 
+.request-categories-heading {
+  margin: 0 0 15px;
+}
+
+.request-categories-heading h2 {
+  font-size: 14px;
+}
+
+.request-categories-heading p {
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 10px;
+}
+
+.request-category-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 25px;
+  display: grid;
+}
+
+.request-category-card {
+  --category-color: #2384b8;
+  --category-soft: #e9f5fb;
+  text-align: left;
+  width: 100%;
+  min-height: 170px;
+  animation: .45s backwards request-card-enter;
+  animation-delay: calc(var(--card-index) * 55ms);
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px;
+  transition: transform .22s, box-shadow .22s, border-color .22s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 7px #19334808;
+}
+
+.request-category-card:before {
+  content: "";
+  background: var(--category-soft);
+  opacity: .65;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  transition: transform .3s;
+  position: absolute;
+  top: -70px;
+  right: -55px;
+}
+
+.request-category-card:hover {
+  border-color: var(--category-color);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px #18344d16;
+}
+
+.request-category-card:hover:before {
+  transform: scale(1.5);
+}
+
+.request-category-green {
+  --category-color: #279b78;
+  --category-soft: #e8f6ef;
+}
+
+.request-category-amber {
+  --category-color: #bb8430;
+  --category-soft: #fcf4e5;
+}
+
+.request-category-violet {
+  --category-color: #8870bd;
+  --category-soft: #f1edfb;
+}
+
+.request-category-rose {
+  --category-color: #bd6e73;
+  --category-soft: #fcf0f1;
+}
+
+.request-category-top {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  position: relative;
+}
+
+.request-category-icon {
+  background: var(--category-soft);
+  width: 39px;
+  height: 39px;
+  color: var(--category-color);
+  border-radius: 10px;
+  place-items: center;
+  transition: transform .22s;
+  display: grid;
+}
+
+.request-category-card:hover .request-category-icon {
+  transform: rotate(-7deg) scale(1.08);
+}
+
+.request-category-count {
+  background: var(--category-soft);
+  min-width: 27px;
+  height: 27px;
+  color: var(--category-color);
+  border-radius: 8px;
+  place-items: center;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  display: grid;
+}
+
+.request-category-title {
+  color: #354b63;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.35;
+  position: relative;
+}
+
+.request-category-description {
+  color: #8b9aad;
+  margin-top: 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.request-category-link {
+  color: var(--category-color);
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.request-category-link svg {
+  transition: transform .22s;
+}
+
+.request-category-card:hover .request-category-link svg {
+  transform: translateX(4px);
+}
+
+.request-back-button {
+  color: #477ca4;
+  background: none;
+  border: 0;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 15px;
+  padding: 7px 0;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.request-back-button:hover {
+  color: #086b9d;
+}
+
+.request-back-button svg {
+  transition: transform .2s;
+}
+
+.request-back-button:hover svg {
+  transform: translateX(-3px);
+}
+
+@keyframes request-card-enter {
+  from {
+    transform: translateY(14px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  .request-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .request-category-card {
+    min-height: 155px;
+    padding: 15px;
+  }
+
+  .request-category-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .request-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-category-card {
+    min-height: 145px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .request-category-card {
+    animation: none;
+  }
+
+  .request-category-card:hover, .request-category-card:hover .request-category-icon, .request-category-card:hover .request-category-link svg, .request-category-card:hover:before, .request-back-button:hover svg {
+    transform: none;
+  }
+}
+
+button .lucide {
+  pointer-events: none;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.segmented button, .job-tabs button {
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  display: inline-flex;
+}
+
+.table-toolbar {
+  flex-wrap: wrap;
+}
+
+.table-toolbar > .segmented {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.event-main strong, .week-event strong, .upcoming-job strong {
+  align-items: center;
+  gap: 6px;
+  display: flex;
+}
+
+.calendar-slot {
+  color: var(--blue);
+}
+
+.calendar-slot > .lucide {
+  opacity: 0;
+  transition: opacity .18s;
+}
+
+.calendar-slot:is(:hover, :focus-visible) > .lucide {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .calendar-slot > .lucide {
+    opacity: .45;
+  }
+}
+
+@media (max-width: 760px) {
+  .date-navigation {
+    flex-wrap: wrap;
+  }
+
+  .job-tabs {
+    gap: 20px;
+  }
+
+  .segmented button {
+    gap: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button:not(:disabled):is(:hover, :focus-visible) .lucide {
+    animation: .48s action-icon-pop;
+  }
+
+  .nav-item.active > .lucide, .segmented button.selected > .lucide, .job-tabs button.selected > .lucide {
+    animation: .4s action-icon-pop;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) :is(.lucide-bell, .lucide-phone, .lucide-wrench) {
+    animation: .55s action-icon-rock;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) .lucide-rotate-ccw {
+    animation: .6s action-icon-turn;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) :is(.lucide-arrow-right, .lucide-chevron-right, .lucide-log-in) {
+    animation: .5s action-icon-forward;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) :is(.lucide-arrow-left, .lucide-chevron-left) {
+    animation: .5s action-icon-back;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) :is(.lucide-send, .lucide-arrow-up-right) {
+    animation: .5s action-icon-send;
+  }
+
+  button:not(:disabled):is(:hover, :focus-visible) :is(.lucide-save, .lucide-package-check) {
+    animation: .5s action-icon-press;
+  }
+
+  button:not(:disabled):active .lucide {
+    animation: .2s action-icon-press;
+  }
+}
+
+@keyframes action-icon-pop {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+
+  40% {
+    transform: translateY(-2px) scale(1.14);
+  }
+
+  70% {
+    transform: translateY(1px) scale(.98);
+  }
+}
+
+@keyframes action-icon-rock {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-14deg);
+  }
+
+  50% {
+    transform: rotate(12deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes action-icon-turn {
+  0% {
+    transform: rotate(0);
+  }
+
+  65% {
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes action-icon-forward {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes action-icon-back {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-4px);
+  }
+}
+
+@keyframes action-icon-send {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(3px, -3px);
+  }
+}
+
+@keyframes action-icon-press {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(.82);
+  }
+
+  70% {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button .lucide {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
 /*# sourceMappingURL=app_globals_0yg4wg8plh8sv.css.map*/

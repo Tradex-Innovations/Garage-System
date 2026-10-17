@@ -6071,6 +6071,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.mjs [app-client] (ecmascript) <export default as ArrowLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.mjs [app-client] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$days$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarDays$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar-days.mjs [app-client] (ecmascript) <export default as CalendarDays>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2d$front$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CarFront$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/car-front.mjs [app-client] (ecmascript) <export default as CarFront>");
@@ -6086,6 +6087,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.mjs [app-client] (ecmascript) <export default as Search>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.mjs [app-client] (ecmascript) <export default as Send>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.mjs [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wrench.mjs [app-client] (ecmascript) <export default as Wrench>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$demo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/demo.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$business$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/business.js [app-client] (ecmascript)");
@@ -6109,84 +6111,261 @@ const tone = (status)=>({
         Booked: "green"
     })[status] || "slate";
 const iconFor = (type)=>type === "Callback" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"] : type === "Wrap / PPF / branding" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"] : type === "Repair estimate" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"] : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$days$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarDays$3e$__["CalendarDays"];
+const REQUEST_CATEGORIES = [
+    {
+        type: "MOT booking",
+        description: "Tests and preparation checks",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$days$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarDays$3e$__["CalendarDays"],
+        colour: "blue"
+    },
+    {
+        type: "Service booking",
+        description: "Routine care and servicing",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2d$front$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CarFront$3e$__["CarFront"],
+        colour: "green"
+    },
+    {
+        type: "Repair estimate",
+        description: "Repairs and cost enquiries",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__["Wrench"],
+        colour: "amber"
+    },
+    {
+        type: "Wrap / PPF / branding",
+        description: "Wraps, protection and fleets",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"],
+        colour: "violet"
+    },
+    {
+        type: "Callback",
+        description: "Customers waiting for a call",
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"],
+        colour: "rose"
+    }
+];
 function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
     _s();
-    const [requestType, setRequestType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All requests");
-    const visible = requests.filter((r)=>(requestType === "All requests" || r.type === requestType) && `${r.id} ${r.customer.name} ${r.customer.reg} ${r.type} ${r.service}`.toLowerCase().includes(search.toLowerCase()));
+    const [requestType, setRequestType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const categoryRequests = requests.filter((r)=>!requestType || r.type === requestType);
+    const visible = categoryRequests.filter((r)=>`${r.id} ${r.customer.name} ${r.customer.reg} ${r.type} ${r.service}`.toLowerCase().includes(search.toLowerCase()));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "request-summary",
+            !requestType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                 children: [
-                    [
-                        'New requests',
-                        requests.filter((r)=>r.status === 'New').length,
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$inbox$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Inbox$3e$__["Inbox"],
-                        'blue'
-                    ],
-                    [
-                        'Being reviewed',
-                        requests.filter((r)=>[
-                                'In review',
-                                'Quoted'
-                            ].includes(r.status)).length,
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clipboard$2d$list$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ClipboardList$3e$__["ClipboardList"],
-                        'amber'
-                    ],
-                    [
-                        'Appointments confirmed',
-                        requests.filter((r)=>r.status === 'Confirmed').length,
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCheck$3e$__["CheckCheck"],
-                        'green'
-                    ]
-                ].map(([label, count, Icon, colour])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "request-summary",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: `stat-icon ${colour}`,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                    size: 19
-                                }, void 0, false, {
-                                    fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 16,
-                                    columnNumber: 407
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 16,
-                                columnNumber: 367
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            [
+                                'New requests',
+                                requests.filter((r)=>r.status === 'New').length,
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$inbox$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Inbox$3e$__["Inbox"],
+                                'blue'
+                            ],
+                            [
+                                'Being reviewed',
+                                requests.filter((r)=>[
+                                        'In review',
+                                        'Quoted'
+                                    ].includes(r.status)).length,
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clipboard$2d$list$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ClipboardList$3e$__["ClipboardList"],
+                                'amber'
+                            ],
+                            [
+                                'Appointments confirmed',
+                                requests.filter((r)=>r.status === 'Confirmed').length,
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCheck$3e$__["CheckCheck"],
+                                'green'
+                            ]
+                        ].map(([label, count, Icon, colour])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: label
+                                        className: `stat-icon ${colour}`,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                            size: 19
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/AdminFeatures.jsx",
+                                            lineNumber: 24,
+                                            columnNumber: 407
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 16,
-                                        columnNumber: 437
+                                        lineNumber: 24,
+                                        columnNumber: 367
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: count
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: label
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AdminFeatures.jsx",
+                                                lineNumber: 24,
+                                                columnNumber: 437
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: count
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AdminFeatures.jsx",
+                                                lineNumber: 24,
+                                                columnNumber: 457
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 16,
-                                        columnNumber: 457
+                                        lineNumber: 24,
+                                        columnNumber: 432
                                     }, this)
                                 ]
-                            }, void 0, true, {
+                            }, label, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 16,
-                                columnNumber: 432
-                            }, this)
-                        ]
-                    }, label, true, {
+                                lineNumber: 24,
+                                columnNumber: 350
+                            }, this))
+                    }, void 0, false, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 16,
-                        columnNumber: 350
-                    }, this))
-            }, void 0, false, {
+                        lineNumber: 23,
+                        columnNumber: 24
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "request-categories-heading",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    children: "Browse by category"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/AdminFeatures.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 54
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Choose a category to see its requests."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/AdminFeatures.jsx",
+                                    lineNumber: 26,
+                                    columnNumber: 81
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/AdminFeatures.jsx",
+                            lineNumber: 26,
+                            columnNumber: 49
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/AdminFeatures.jsx",
+                        lineNumber: 26,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "request-category-grid",
+                        children: REQUEST_CATEGORIES.map(({ type, description, icon: Icon, colour }, index)=>{
+                            const count = requests.filter((request)=>request.type === type).length;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: `request-category-card request-category-${colour}`,
+                                style: {
+                                    "--card-index": index
+                                },
+                                onClick: ()=>setRequestType(type),
+                                "aria-label": `View ${type} requests, ${count} ${count === 1 ? "request" : "requests"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "request-category-top",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "request-category-icon",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                    size: 23,
+                                                    strokeWidth: 1.8
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/AdminFeatures.jsx",
+                                                    lineNumber: 31,
+                                                    columnNumber: 90
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AdminFeatures.jsx",
+                                                lineNumber: 31,
+                                                columnNumber: 50
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "request-category-count",
+                                                children: count
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AdminFeatures.jsx",
+                                                lineNumber: 31,
+                                                columnNumber: 133
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/AdminFeatures.jsx",
+                                        lineNumber: 31,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "request-category-title",
+                                        children: type
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AdminFeatures.jsx",
+                                        lineNumber: 32,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "request-category-description",
+                                        children: description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/AdminFeatures.jsx",
+                                        lineNumber: 33,
+                                        columnNumber: 11
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "request-category-link",
+                                        children: [
+                                            "View requests ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                size: 15
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/AdminFeatures.jsx",
+                                                lineNumber: 34,
+                                                columnNumber: 65
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/AdminFeatures.jsx",
+                                        lineNumber: 34,
+                                        columnNumber: 11
+                                    }, this)
+                                ]
+                            }, type, true, {
+                                fileName: "[project]/components/AdminFeatures.jsx",
+                                lineNumber: 30,
+                                columnNumber: 16
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/components/AdminFeatures.jsx",
+                        lineNumber: 27,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 15,
-                columnNumber: 5
+                lineNumber: 23,
+                columnNumber: 22
+            }, this),
+            requestType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "request-back-button",
+                onClick: ()=>setRequestType(null),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
+                        size: 16
+                    }, void 0, false, {
+                        fileName: "[project]/components/AdminFeatures.jsx",
+                        lineNumber: 38,
+                        columnNumber: 98
+                    }, this),
+                    "All request categories"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/AdminFeatures.jsx",
+                lineNumber: 38,
+                columnNumber: 21
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "panel",
@@ -6198,32 +6377,33 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         children: [
-                                            "Customer requests ",
+                                            requestType || "Customer requests",
+                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "count",
-                                                children: requests.length
+                                                children: categoryRequests.length
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 19,
-                                                columnNumber: 64
+                                                lineNumber: 40,
+                                                columnNumber: 83
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 19,
+                                        lineNumber: 40,
                                         columnNumber: 42
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Website, phone, email and WhatsApp enquiries, together."
+                                        children: requestType ? `Showing ${requestType.toLowerCase()} enquiries only.` : "Website, phone, email and WhatsApp enquiries, together."
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 19,
-                                        columnNumber: 117
+                                        lineNumber: 40,
+                                        columnNumber: 144
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 19,
+                                lineNumber: 40,
                                 columnNumber: 37
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6234,49 +6414,20 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 19,
-                                        columnNumber: 236
+                                        lineNumber: 40,
+                                        columnNumber: 338
                                     }, this),
                                     "New request"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 19,
-                                columnNumber: 185
+                                lineNumber: 40,
+                                columnNumber: 287
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 19,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "request-filter-row",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "segmented",
-                            role: "group",
-                            "aria-label": "Filter requests by type",
-                            children: [
-                                "All requests",
-                                ...__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$business$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["REQUEST_TYPES"]
-                            ].map((type)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: requestType === type ? "selected" : "",
-                                    "aria-pressed": requestType === type,
-                                    onClick: ()=>setRequestType(type),
-                                    children: type
-                                }, type, false, {
-                                    fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 20,
-                                    columnNumber: 168
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 20,
-                            columnNumber: 43
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 20,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6291,51 +6442,51 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                     children: "Customer & vehicle"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 55
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                     children: "Request"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 82
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                     children: "Preferred date"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 98
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                     children: "Source"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 121
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                                     children: "Status"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 136
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {}, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 21,
+                                                    lineNumber: 41,
                                                     columnNumber: 151
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 21,
+                                            lineNumber: 41,
                                             columnNumber: 51
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 41,
                                         columnNumber: 44
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -6354,12 +6505,12 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                         size: 20
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                                        lineNumber: 21,
+                                                                        lineNumber: 41,
                                                                         columnNumber: 422
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                                    lineNumber: 21,
+                                                                    lineNumber: 41,
                                                                     columnNumber: 336
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6368,7 +6519,7 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                             children: request.customer.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                                                            lineNumber: 21,
+                                                                            lineNumber: 41,
                                                                             columnNumber: 452
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -6379,24 +6530,24 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                                                            lineNumber: 21,
+                                                                            lineNumber: 41,
                                                                             columnNumber: 492
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                                    lineNumber: 21,
+                                                                    lineNumber: 41,
                                                                     columnNumber: 447
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                                            lineNumber: 21,
+                                                            lineNumber: 41,
                                                             columnNumber: 306
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 302
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6405,7 +6556,7 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                 children: request.service
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                                lineNumber: 21,
+                                                                lineNumber: 41,
                                                                 columnNumber: 579
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -6418,13 +6569,13 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                                lineNumber: 21,
+                                                                lineNumber: 41,
                                                                 columnNumber: 613
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 575
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6435,20 +6586,20 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                 children: "MOT preparation requested"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                                lineNumber: 21,
+                                                                lineNumber: 41,
                                                                 columnNumber: 802
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 687
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                         children: request.source
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 869
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6457,12 +6608,12 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                             children: request.status
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                                            lineNumber: 21,
+                                                            lineNumber: 41,
                                                             columnNumber: 898
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 894
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -6474,35 +6625,35 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                                                 size: 17
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                                lineNumber: 21,
+                                                                lineNumber: 41,
                                                                 columnNumber: 1077
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                                            lineNumber: 21,
+                                                            lineNumber: 41,
                                                             columnNumber: 966
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 21,
+                                                        lineNumber: 41,
                                                         columnNumber: 962
                                                     }, this)
                                                 ]
                                             }, request.id, true, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 21,
+                                                lineNumber: 41,
                                                 columnNumber: 246
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 41,
                                         columnNumber: 170
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 21,
+                                lineNumber: 41,
                                 columnNumber: 37
                             }, this),
                             !visible.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6512,39 +6663,39 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                                         size: 28
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 41,
                                         columnNumber: 1186
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         children: "No matching requests"
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 41,
                                         columnNumber: 1205
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "Choose another filter or record a new enquiry."
+                                        children: search ? "Try another search." : requestType ? "There are no requests in this category yet." : "Record a new enquiry to get started."
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 41,
                                         columnNumber: 1234
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 21,
+                                lineNumber: 41,
                                 columnNumber: 1163
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 21,
+                        lineNumber: 41,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 18,
+                lineNumber: 39,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6552,17 +6703,17 @@ function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
                 children: "Requests are enquiries. They only appear in the diary after staff confirm an appointment."
             }, void 0, false, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 23,
+                lineNumber: 43,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 14,
+        lineNumber: 22,
         columnNumber: 10
     }, this);
 }
-_s(RequestsInbox, "Cw0gAw/mwbcBfXD0Jt1clrXnrI4=");
+_s(RequestsInbox, "2bRNjK6ImvLugziNis77mnSDu0w=");
 _c = RequestsInbox;
 function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuote, onBook, onComplete, onOpenQuote, onOpenJob }) {
     const needsQuote = [
@@ -6592,20 +6743,20 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 52,
                                     columnNumber: 50
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: request.service
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 52,
                                     columnNumber: 121
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 32,
+                            lineNumber: 52,
                             columnNumber: 45
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Badge, {
@@ -6613,13 +6764,13 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                             children: request.status
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 32,
+                            lineNumber: 52,
                             columnNumber: 153
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 32,
+                    lineNumber: 52,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6631,12 +6782,12 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                 size: 24
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 33,
+                                lineNumber: 53,
                                 columnNumber: 77
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 33,
+                            lineNumber: 53,
                             columnNumber: 41
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6645,7 +6796,7 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: request.customer.name
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 53,
                                     columnNumber: 111
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6657,25 +6808,25 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                             children: request.customer.reg
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 33,
+                                            lineNumber: 53,
                                             columnNumber: 183
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 53,
                                     columnNumber: 151
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 33,
+                            lineNumber: 53,
                             columnNumber: 106
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 33,
+                    lineNumber: 53,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6687,20 +6838,20 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: "Phone"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 41
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                     children: request.customer.phone
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 59
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 34,
+                            lineNumber: 54,
                             columnNumber: 36
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6709,20 +6860,20 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 111
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                     children: request.customer.email
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 129
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 34,
+                            lineNumber: 54,
                             columnNumber: 106
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6731,20 +6882,20 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: "Preferred date"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 181
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                     children: request.preferredDate ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$demo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dateLabel"])(request.preferredDate) : "Call customer to arrange"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 208
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 34,
+                            lineNumber: 54,
                             columnNumber: 176
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6753,26 +6904,26 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: "MOT preparation"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 323
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                     children: request.type === "MOT booking" ? request.motPrep : "Not applicable"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 54,
                                     columnNumber: 351
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 34,
+                            lineNumber: 54,
                             columnNumber: 318
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 34,
+                    lineNumber: 54,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6782,20 +6933,20 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                             children: "Customer’s request"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 35,
+                            lineNumber: 55,
                             columnNumber: 40
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: request.details || "No additional notes provided."
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 35,
+                            lineNumber: 55,
                             columnNumber: 71
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 35,
+                    lineNumber: 55,
                     columnNumber: 7
                 }, this),
                 quote && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6806,7 +6957,7 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 36,
+                            lineNumber: 56,
                             columnNumber: 89
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6821,26 +6972,26 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 36,
+                                    lineNumber: 56,
                                     columnNumber: 137
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 36,
+                            lineNumber: 56,
                             columnNumber: 111
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                             size: 17
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 36,
+                            lineNumber: 56,
                             columnNumber: 237
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 36,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, this),
                 request.jobId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6849,7 +7000,7 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WrenchIcon, {}, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 37,
+                            lineNumber: 57,
                             columnNumber: 100
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6860,26 +7011,26 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     children: "Open the appointment and job workspace"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 37,
+                                    lineNumber: 57,
                                     columnNumber: 150
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 37,
+                            lineNumber: 57,
                             columnNumber: 114
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                             size: 17
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 37,
+                            lineNumber: 57,
                             columnNumber: 210
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 37,
+                    lineNumber: 57,
                     columnNumber: 25
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6893,14 +7044,14 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     size: 15
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 39,
+                                    lineNumber: 59,
                                     columnNumber: 94
                                 }, this),
                                 "Mark reviewed"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 39,
+                            lineNumber: 59,
                             columnNumber: 38
                         }, this),
                         !finished && request.type === "Callback" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6911,14 +7062,14 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     size: 15
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 40,
+                                    lineNumber: 60,
                                     columnNumber: 110
                                 }, this),
                                 "Mark callback completed"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 40,
+                            lineNumber: 60,
                             columnNumber: 54
                         }, this),
                         !finished && request.type !== "Callback" && needsQuote && (!quote || quote.status === "Declined") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6929,14 +7080,14 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 41,
+                                    lineNumber: 61,
                                     columnNumber: 164
                                 }, this),
                                 "Prepare quotation"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 41,
+                            lineNumber: 61,
                             columnNumber: 111
                         }, this),
                         !finished && request.type !== "Callback" && (!needsQuote || quote?.status === "Accepted") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6947,14 +7098,14 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 42,
+                                    lineNumber: 62,
                                     columnNumber: 155
                                 }, this),
                                 "Confirm an appointment"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 42,
+                            lineNumber: 62,
                             columnNumber: 103
                         }, this),
                         !finished && quote && ![
@@ -6969,19 +7120,19 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                                     size: 15
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 43,
+                                    lineNumber: 63,
                                     columnNumber: 170
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 43,
+                            lineNumber: 63,
                             columnNumber: 84
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 38,
+                    lineNumber: 58,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6989,7 +7140,7 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                     children: finished ? "This enquiry has been handled. Its history is retained below." : request.type === "Callback" ? "Record completion after contacting the customer. No calls are made by this demo." : needsQuote ? "Review the scope and agree a price before scheduling the work." : "You’ll choose an available time, bay and technician before confirming."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 45,
+                    lineNumber: 65,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6998,30 +7149,30 @@ function RequestDetail({ request, quote, Modal, Badge, onClose, onReview, onQuot
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {}, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 46,
+                                    lineNumber: 66,
                                     columnNumber: 86
                                 }, this),
                                 entry
                             ]
                         }, i, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 46,
+                            lineNumber: 66,
                             columnNumber: 75
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 46,
+                    lineNumber: 66,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/AdminFeatures.jsx",
-            lineNumber: 31,
+            lineNumber: 51,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 30,
+        lineNumber: 50,
         columnNumber: 10
     }, this);
 }
@@ -7031,7 +7182,7 @@ function WrenchIcon() {
         size: 18
     }, void 0, false, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 50,
+        lineNumber: 70,
         columnNumber: 32
     }, this);
 }
@@ -7099,7 +7250,7 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                     children: "Record a website or phone enquiry for staff to review. Use the fictional sample details for the demo."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 58,
+                    lineNumber: 78,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7116,18 +7267,18 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                             children: t
                                         }, t, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 59,
+                                            lineNumber: 79,
                                             columnNumber: 169
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 79,
                                     columnNumber: 74
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 59,
+                            lineNumber: 79,
                             columnNumber: 32
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7146,24 +7297,24 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                             children: s
                                         }, s, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 59,
+                                            lineNumber: 79,
                                             columnNumber: 382
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 79,
                                     columnNumber: 252
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 59,
+                            lineNumber: 79,
                             columnNumber: 216
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 59,
+                    lineNumber: 79,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7198,7 +7349,7 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                         ]
                                     }, c.id, true, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 60,
+                                        lineNumber: 80,
                                         columnNumber: 374
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -7206,19 +7357,19 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     children: "New demo customer"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 60,
+                                    lineNumber: 80,
                                     columnNumber: 435
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 60,
+                            lineNumber: 80,
                             columnNumber: 56
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 60,
+                    lineNumber: 80,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7231,13 +7382,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                             onChange: (e)=>field("name", e.target.value)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 61,
+                            lineNumber: 81,
                             columnNumber: 48
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 61,
+                    lineNumber: 81,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7254,13 +7405,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     onChange: (e)=>field("phone", e.target.value)
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 82,
                                     columnNumber: 67
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 62,
+                            lineNumber: 82,
                             columnNumber: 32
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7274,13 +7425,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     onChange: (e)=>field("email", e.target.value)
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 82,
                                     columnNumber: 207
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 62,
+                            lineNumber: 82,
                             columnNumber: 172
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7293,13 +7444,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     onChange: (e)=>field("vehicle", e.target.value)
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 82,
                                     columnNumber: 351
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 62,
+                            lineNumber: 82,
                             columnNumber: 314
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7312,19 +7463,19 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     onChange: (e)=>field("reg", e.target.value)
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 82,
                                     columnNumber: 491
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 62,
+                            lineNumber: 82,
                             columnNumber: 449
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 62,
+                    lineNumber: 82,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7338,18 +7489,18 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     children: s
                                 }, s, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 63,
+                                    lineNumber: 83,
                                     columnNumber: 140
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 63,
+                            lineNumber: 83,
                             columnNumber: 42
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 63,
+                    lineNumber: 83,
                     columnNumber: 5
                 }, this),
                 values.type !== "Callback" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7363,13 +7514,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                             onChange: (e)=>field("preferredDate", e.target.value)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 64,
+                            lineNumber: 84,
                             columnNumber: 80
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 64,
+                    lineNumber: 84,
                     columnNumber: 36
                 }, this),
                 values.type === "MOT booking" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7384,26 +7535,26 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     children: "No"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 65,
+                                    lineNumber: 85,
                                     columnNumber: 175
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                     children: "Yes"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 65,
+                                    lineNumber: 85,
                                     columnNumber: 194
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 65,
+                            lineNumber: 85,
                             columnNumber: 95
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 65,
+                    lineNumber: 85,
                     columnNumber: 39
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7418,13 +7569,13 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                             rows: 3
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 66,
+                            lineNumber: 86,
                             columnNumber: 59
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 66,
+                    lineNumber: 86,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7437,7 +7588,7 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                             children: "Cancel"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 67,
+                            lineNumber: 87,
                             columnNumber: 36
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -7448,20 +7599,20 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 67,
+                                    lineNumber: 87,
                                     columnNumber: 169
                                 }, this),
                                 initial.createQuote ? "Create draft quote" : "Save request"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 67,
+                            lineNumber: 87,
                             columnNumber: 120
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 67,
+                    lineNumber: 87,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7469,18 +7620,18 @@ function RequestForm({ initial = {}, Modal, onClose, onSave }) {
                     children: "Saved in the demo only. This does not reserve a diary slot."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 67,
+                    lineNumber: 87,
                     columnNumber: 263
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/AdminFeatures.jsx",
-            lineNumber: 57,
+            lineNumber: 77,
             columnNumber: 119
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 57,
+        lineNumber: 77,
         columnNumber: 10
     }, this);
 }
@@ -7506,26 +7657,26 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                         children: quotes.length
                                     }, void 0, false, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 94,
                                         columnNumber: 87
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 72
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Repair estimates, vehicle wrapping, PPF and fleet branding."
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 138
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 74,
+                        lineNumber: 94,
                         columnNumber: 67
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -7536,20 +7687,20 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                 size: 16
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 261
                             }, this),
                             "New quote"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 74,
+                        lineNumber: 94,
                         columnNumber: 210
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 74,
+                lineNumber: 94,
                 columnNumber: 37
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7569,17 +7720,17 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                             children: f
                         }, f, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 74,
+                            lineNumber: 94,
                             columnNumber: 442
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 74,
+                    lineNumber: 94,
                     columnNumber: 339
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 74,
+                lineNumber: 94,
                 columnNumber: 303
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7594,51 +7745,51 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                             children: "Quotation"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 604
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             children: "Customer & vehicle"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 622
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             children: "Work"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 649
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             children: "Total"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 662
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             children: "Status"
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 676
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {}, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 94,
                                             columnNumber: 691
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 74,
+                                    lineNumber: 94,
                                     columnNumber: 600
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 593
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -7654,7 +7805,7 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 783
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -7665,13 +7816,13 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 810
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 779
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -7680,7 +7831,7 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         children: q.customer.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 872
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -7692,13 +7843,13 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 906
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 868
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -7712,13 +7863,13 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 1001
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 986
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -7726,12 +7877,12 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                     children: q.amount ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$demo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["money"])(q.amount) : "To be priced"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 94,
                                                     columnNumber: 1085
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 1081
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -7740,12 +7891,12 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                     children: q.status
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 94,
                                                     columnNumber: 1156
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 1152
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -7757,34 +7908,34 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                                         size: 17
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 94,
                                                         columnNumber: 1307
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 94,
                                                     columnNumber: 1212
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                                lineNumber: 74,
+                                                lineNumber: 94,
                                                 columnNumber: 1208
                                             }, this)
                                         ]
                                     }, q.id, true, {
                                         fileName: "[project]/components/AdminFeatures.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 94,
                                         columnNumber: 735
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 710
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 74,
+                        lineNumber: 94,
                         columnNumber: 586
                     }, this),
                     !visible.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7794,39 +7945,39 @@ function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
                                 size: 28
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 1413
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "No matching quotes"
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 1435
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Create one from an enquiry to get started."
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 74,
+                                lineNumber: 94,
                                 columnNumber: 1462
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AdminFeatures.jsx",
-                        lineNumber: 74,
+                        lineNumber: 94,
                         columnNumber: 1390
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AdminFeatures.jsx",
-                lineNumber: 74,
+                lineNumber: 94,
                 columnNumber: 556
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 74,
+        lineNumber: 94,
         columnNumber: 10
     }, this);
 }
@@ -7860,20 +8011,20 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     children: quote.service.toUpperCase()
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 152
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     children: quote.customer.name
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 214
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 147
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Badge, {
@@ -7881,13 +8032,13 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: quote.status
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 250
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 109
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7899,12 +8050,12 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                 size: 23
                             }, void 0, false, {
                                 fileName: "[project]/components/AdminFeatures.jsx",
-                                lineNumber: 84,
+                                lineNumber: 104,
                                 columnNumber: 383
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 345
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7913,7 +8064,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     children: quote.customer.vehicle
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 419
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7923,7 +8074,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                             children: quote.customer.reg
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 84,
+                                            lineNumber: 104,
                                             columnNumber: 463
                                         }, this),
                                         " · ",
@@ -7931,19 +8082,19 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 460
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 414
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 311
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -7958,13 +8109,13 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             onChange: (e)=>setScope(e.target.value)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 605
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 562
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7985,13 +8136,13 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     placeholder: "0.00"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 798
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 746
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -8019,24 +8170,24 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                             ]
                                         }, n, true, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 84,
+                                            lineNumber: 104,
                                             columnNumber: 1139
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 104,
                                     columnNumber: 1001
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 958
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 719
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8046,20 +8197,20 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: "Preferred date"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 1241
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$demo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dateLabel"])(quote.preferredDate)
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 84,
+                            lineNumber: 104,
                             columnNumber: 1268
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 1210
                 }, this),
                 error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8068,7 +8219,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                     children: error
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 84,
+                    lineNumber: 104,
                     columnNumber: 1333
                 }, this),
                 editable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8080,7 +8231,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: "Save draft"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 85,
+                            lineNumber: 105,
                             columnNumber: 49
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8091,20 +8242,20 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     size: 15
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 85,
+                                    lineNumber: 105,
                                     columnNumber: 202
                                 }, this),
                                 "Send quote (demo)"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 85,
+                            lineNumber: 105,
                             columnNumber: 136
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 85,
+                    lineNumber: 105,
                     columnNumber: 18
                 }, this),
                 quote.status === "Sent" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8114,14 +8265,14 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: "Record the customer’s response"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 86,
+                            lineNumber: 106,
                             columnNumber: 65
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "After speaking with the customer, record their decision here."
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 86,
+                            lineNumber: 106,
                             columnNumber: 104
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8135,14 +8286,14 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                             size: 15
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 86,
+                                            lineNumber: 106,
                                             columnNumber: 271
                                         }, this),
                                         "Record accepted"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 86,
+                                    lineNumber: 106,
                                     columnNumber: 203
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8153,26 +8304,26 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                             size: 15
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 86,
+                                            lineNumber: 106,
                                             columnNumber: 385
                                         }, this),
                                         "Record declined"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 86,
+                                    lineNumber: 106,
                                     columnNumber: 314
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 86,
+                            lineNumber: 106,
                             columnNumber: 172
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 86,
+                    lineNumber: 106,
                     columnNumber: 33
                 }, this),
                 quote.status === "Accepted" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8182,14 +8333,14 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: "Approved and ready to schedule."
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 87,
+                            lineNumber: 107,
                             columnNumber: 69
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "Choose a suitable time, bay and technician to confirm the visit."
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 87,
+                            lineNumber: 107,
                             columnNumber: 109
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8200,20 +8351,20 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 107,
                                     columnNumber: 232
                                 }, this),
                                 "Book approved quote"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 87,
+                            lineNumber: 107,
                             columnNumber: 180
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 87,
+                    lineNumber: 107,
                     columnNumber: 37
                 }, this),
                 quote.jobId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8224,7 +8375,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 88,
+                            lineNumber: 108,
                             columnNumber: 94
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8235,26 +8386,26 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                                     children: "Confirmed appointment and agreed work"
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 88,
+                                    lineNumber: 108,
                                     columnNumber: 145
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 88,
+                            lineNumber: 108,
                             columnNumber: 121
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                             size: 17
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 88,
+                            lineNumber: 108,
                             columnNumber: 204
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 88,
+                    lineNumber: 108,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8262,7 +8413,7 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                     children: "Admin demo · Quote sending and customer responses are simulated. No portal or email is opened."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 89,
+                    lineNumber: 109,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8271,30 +8422,30 @@ function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpen
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {}, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 89,
+                                    lineNumber: 109,
                                     columnNumber: 205
                                 }, this),
                                 h
                             ]
                         }, i, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 89,
+                            lineNumber: 109,
                             columnNumber: 194
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 89,
+                    lineNumber: 109,
                     columnNumber: 132
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/AdminFeatures.jsx",
-            lineNumber: 84,
+            lineNumber: 104,
             columnNumber: 71
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 84,
+        lineNumber: 104,
         columnNumber: 10
     }, this);
 }
@@ -8321,7 +8472,7 @@ function MotLookup({ customers, Modal, onClose }) {
                     children: "Look up a vehicle from the demo customer records. This does not connect to DVSA."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 267
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -8338,13 +8489,13 @@ function MotLookup({ customers, Modal, onClose }) {
                             placeholder: "e.g. LK19 FWD"
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 96,
+                            lineNumber: 116,
                             columnNumber: 434
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 384
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -8355,14 +8506,14 @@ function MotLookup({ customers, Modal, onClose }) {
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 96,
+                            lineNumber: 116,
                             columnNumber: 612
                         }, this),
                         "Check sample record"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 563
                 }, this),
                 checked && (result ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8372,7 +8523,7 @@ function MotLookup({ customers, Modal, onClose }) {
                             size: 26
                         }, void 0, false, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 96,
+                            lineNumber: 116,
                             columnNumber: 710
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8381,7 +8532,7 @@ function MotLookup({ customers, Modal, onClose }) {
                                     children: result.vehicle
                                 }, void 0, false, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 96,
+                                    lineNumber: 116,
                                     columnNumber: 740
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8392,7 +8543,7 @@ function MotLookup({ customers, Modal, onClose }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 96,
+                                    lineNumber: 116,
                                     columnNumber: 773
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -8402,25 +8553,25 @@ function MotLookup({ customers, Modal, onClose }) {
                                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$demo$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dateLabel"])(result.motDue)
                                         }, void 0, false, {
                                             fileName: "[project]/components/AdminFeatures.jsx",
-                                            lineNumber: 96,
+                                            lineNumber: 116,
                                             columnNumber: 830
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/AdminFeatures.jsx",
-                                    lineNumber: 96,
+                                    lineNumber: 116,
                                     columnNumber: 808
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/AdminFeatures.jsx",
-                            lineNumber: 96,
+                            lineNumber: 116,
                             columnNumber: 735
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 682
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "form-error",
@@ -8428,7 +8579,7 @@ function MotLookup({ customers, Modal, onClose }) {
                     children: "No sample record found. Try LK19 FWD or BT21 VGL."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 885
                 }, this)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8436,18 +8587,18 @@ function MotLookup({ customers, Modal, onClose }) {
                     children: "Sample expiry dates are illustrative and are not official MOT results."
                 }, void 0, false, {
                     fileName: "[project]/components/AdminFeatures.jsx",
-                    lineNumber: 96,
+                    lineNumber: 116,
                     columnNumber: 980
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/AdminFeatures.jsx",
-            lineNumber: 96,
+            lineNumber: 116,
             columnNumber: 67
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/AdminFeatures.jsx",
-        lineNumber: 96,
+        lineNumber: 116,
         columnNumber: 10
     }, this);
 }

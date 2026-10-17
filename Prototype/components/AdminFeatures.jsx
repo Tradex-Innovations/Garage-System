@@ -1,24 +1,45 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CalendarDays, CarFront, Check, CheckCheck, ChevronRight, ClipboardList, FileText, Inbox, Paintbrush, Phone, Plus, Search, Send, ShieldCheck, X } from "lucide-react";
+import { FilePlus2, Save, ArrowLeft, ArrowRight, CalendarDays, CarFront, Check, CheckCheck, ChevronRight, ClipboardList, FileText, Inbox, Paintbrush, Phone, Plus, Search, Send, ShieldCheck, Wrench, X } from "lucide-react";
+import ActionIcon from "./ActionIcon";
 import { DEMO_DATE, SAMPLE_CUSTOMERS, money, dateLabel } from "../lib/demo";
 import { REQUEST_TYPES, QUOTE_SERVICES, SERVICE_OPTIONS } from "../lib/business";
 
 const tone = status => ({ New: "blue", "In review": "amber", Quoted: "violet", Confirmed: "green", Closed: "slate", Draft: "slate", Sent: "blue", Accepted: "green", Declined: "rose", Booked: "green" }[status] || "slate");
 const iconFor = type => type === "Callback" ? Phone : type === "Wrap / PPF / branding" ? Paintbrush : type === "Repair estimate" ? FileText : CalendarDays;
+const REQUEST_CATEGORIES = [
+  { type: "MOT booking", description: "Tests and preparation checks", icon: CalendarDays, colour: "blue" },
+  { type: "Service booking", description: "Routine care and servicing", icon: CarFront, colour: "green" },
+  { type: "Repair estimate", description: "Repairs and cost enquiries", icon: Wrench, colour: "amber" },
+  { type: "Wrap / PPF / branding", description: "Wraps, protection and fleets", icon: Paintbrush, colour: "violet" },
+  { type: "Callback", description: "Customers waiting for a call", icon: Phone, colour: "rose" },
+];
 
 export function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
-  const [requestType, setRequestType] = useState("All requests");
-  const visible = requests.filter(r => (requestType === "All requests" || r.type === requestType) && `${r.id} ${r.customer.name} ${r.customer.reg} ${r.type} ${r.service}`.toLowerCase().includes(search.toLowerCase()));
+  const [requestType, setRequestType] = useState(null);
+  const categoryRequests = requests.filter(r => !requestType || r.type === requestType);
+  const visible = categoryRequests.filter(r => `${r.id} ${r.customer.name} ${r.customer.reg} ${r.type} ${r.service}`.toLowerCase().includes(search.toLowerCase()));
   return <>
-    <div className="request-summary">
+    {!requestType && <><div className="request-summary">
       {[['New requests', requests.filter(r => r.status === 'New').length, Inbox, 'blue'], ['Being reviewed', requests.filter(r => ['In review', 'Quoted'].includes(r.status)).length, ClipboardList, 'amber'], ['Appointments confirmed', requests.filter(r => r.status === 'Confirmed').length, CheckCheck, 'green']].map(([label, count, Icon, colour]) => <div key={label}><span className={`stat-icon ${colour}`}><Icon size={19} /></span><div><span>{label}</span><strong>{count}</strong></div></div>)}
     </div>
+    <div className="request-categories-heading"><div><h2>Browse by category</h2><p>Choose a category to see its requests.</p></div></div>
+    <div className="request-category-grid">
+      {REQUEST_CATEGORIES.map(({ type, description, icon: Icon, colour }, index) => {
+        const count = requests.filter(request => request.type === type).length;
+        return <button className={`request-category-card request-category-${colour}`} key={type} style={{ "--card-index": index }} onClick={() => setRequestType(type)} aria-label={`View ${type} requests, ${count} ${count === 1 ? "request" : "requests"}`}>
+          <span className="request-category-top"><span className="request-category-icon"><Icon size={23} strokeWidth={1.8} /></span><span className="request-category-count">{count}</span></span>
+          <span className="request-category-title">{type}</span>
+          <span className="request-category-description">{description}</span>
+          <span className="request-category-link">View requests <ArrowRight size={15} /></span>
+        </button>;
+      })}
+    </div></>}
+    {requestType && <button className="request-back-button" onClick={() => setRequestType(null)}><ArrowLeft size={16} />All request categories</button>}
     <section className="panel">
-      <div className="panel-header"><div><h2>Customer requests <span className="count">{requests.length}</span></h2><p>Website, phone, email and WhatsApp enquiries, together.</p></div><button className="button primary" onClick={onNew}><Plus size={16} />New request</button></div>
-      <div className="request-filter-row"><div className="segmented" role="group" aria-label="Filter requests by type">{["All requests", ...REQUEST_TYPES].map(type => <button className={requestType === type ? "selected" : ""} aria-pressed={requestType === type} key={type} onClick={() => setRequestType(type)}>{type}</button>)}</div></div>
-      <div className="table-scroll"><table><thead><tr><th>Customer & vehicle</th><th>Request</th><th>Preferred date</th><th>Source</th><th>Status</th><th /></tr></thead><tbody>{visible.map(request => { const Icon = iconFor(request.type); return <tr key={request.id} onClick={() => onOpen(request.id)}><td><div className="vehicle-cell"><span className={`vehicle-icon ${request.type.includes("Wrap") ? "violet" : "blue"}`}><Icon size={20} /></span><div><strong>{request.customer.name}</strong><small>{request.customer.reg} · {request.customer.vehicle}</small></div></div></td><td><strong>{request.service}</strong><small className="cell-sub">REQ-{request.id} · {request.type}</small></td><td>{request.preferredDate ? dateLabel(request.preferredDate) : "Callback requested"}{request.motPrep === "Yes" && <small className="cell-sub">MOT preparation requested</small>}</td><td>{request.source}</td><td><Badge tone={tone(request.status)}>{request.status}</Badge></td><td><button className="icon-button" aria-label={`Review request ${request.id}`} onClick={() => onOpen(request.id)}><ChevronRight size={17} /></button></td></tr>; })}</tbody></table>{!visible.length && <div className="empty"><Inbox size={28} /><h3>No matching requests</h3><p>Choose another filter or record a new enquiry.</p></div>}</div>
+      <div className="panel-header"><div><h2>{requestType || "Customer requests"} <span className="count">{categoryRequests.length}</span></h2><p>{requestType ? `Showing ${requestType.toLowerCase()} enquiries only.` : "Website, phone, email and WhatsApp enquiries, together."}</p></div><button className="button primary" onClick={onNew}><Plus size={16} />New request</button></div>
+      <div className="table-scroll"><table><thead><tr><th>Customer & vehicle</th><th>Request</th><th>Preferred date</th><th>Source</th><th>Status</th><th /></tr></thead><tbody>{visible.map(request => { const Icon = iconFor(request.type); return <tr key={request.id} onClick={() => onOpen(request.id)}><td><div className="vehicle-cell"><span className={`vehicle-icon ${request.type.includes("Wrap") ? "violet" : "blue"}`}><Icon size={20} /></span><div><strong>{request.customer.name}</strong><small>{request.customer.reg} · {request.customer.vehicle}</small></div></div></td><td><strong>{request.service}</strong><small className="cell-sub">REQ-{request.id} · {request.type}</small></td><td>{request.preferredDate ? dateLabel(request.preferredDate) : request.type === "Callback" ? "Callback requested" : "To be agreed"}{request.motPrep === "Yes" && <small className="cell-sub">MOT preparation requested</small>}</td><td>{request.source}</td><td><Badge tone={tone(request.status)}>{request.status}</Badge></td><td><button className="icon-button" aria-label={`Review request ${request.id}`} onClick={() => onOpen(request.id)}><ChevronRight size={17} /></button></td></tr>; })}</tbody></table>{!visible.length && <div className="empty"><Inbox size={28} /><h3>No matching requests</h3><p>{search ? "Try another search." : requestType ? "There are no requests in this category yet." : "Record a new enquiry to get started."}</p></div>}</div>
     </section>
     <p className="admin-footnote">Requests are enquiries. They only appear in the diary after staff confirm an appointment.</p>
   </>;
@@ -40,7 +61,7 @@ export function RequestDetail({ request, quote, Modal, Badge, onClose, onReview,
         {!finished && request.type === "Callback" && <button className="button primary" onClick={onComplete}><Phone size={15} />Mark callback completed</button>}
         {!finished && request.type !== "Callback" && needsQuote && (!quote || quote.status === "Declined") && <button className="button primary" onClick={onQuote}><FileText size={16} />Prepare quotation</button>}
         {!finished && request.type !== "Callback" && (!needsQuote || quote?.status === "Accepted") && <button className="button primary" onClick={onBook}><CalendarDays size={16} />Confirm an appointment</button>}
-        {!finished && quote && !["Accepted", "Declined"].includes(quote.status) && <button className="button primary" onClick={() => onOpenQuote(quote.id)}>Manage quote <ArrowRight size={15} /></button>}
+        {!finished && quote && !["Accepted", "Declined"].includes(quote.status) && <button className="button primary" onClick={() => onOpenQuote(quote.id)}><FileText size={16} />Manage quote <ArrowRight size={15} /></button>}
       </div>
       <p className="form-footnote">{finished ? "This enquiry has been handled. Its history is retained below." : request.type === "Callback" ? "Record completion after contacting the customer. No calls are made by this demo." : needsQuote ? "Review the scope and agree a price before scheduling the work." : "You’ll choose an available time, bay and technician before confirming."}</p>
       <div className="request-history">{request.history.map((entry, i) => <p key={i}><i />{entry}</p>)}</div>
@@ -64,14 +85,43 @@ export function RequestForm({ initial = {}, Modal, onClose, onSave }) {
     {values.type !== "Callback" && <label className="form-field">Preferred date<input type="date" required value={values.preferredDate} onChange={e => field("preferredDate", e.target.value)} /></label>}
     {values.type === "MOT booking" && <label className="form-field">MOT preparation requested?<select value={values.motPrep} onChange={e => field("motPrep", e.target.value)}><option>No</option><option>Yes</option></select></label>}
     <label className="form-field">Requested work / enquiry<textarea required placeholder="Describe the service, repair, finish or callback requested…" value={values.details} onChange={e => field("details", e.target.value)} rows={3} /></label>
-    <div className="modal-actions"><button className="button secondary" type="button" onClick={onClose}>Cancel</button><button className="button primary" type="submit"><Plus size={16} />{initial.createQuote ? "Create draft quote" : "Save request"}</button></div><p className="form-footnote">Saved in the demo only. This does not reserve a diary slot.</p>
+    <div className="modal-actions"><button className="button secondary" type="button" onClick={onClose}><X size={16} />Cancel</button><button className="button primary" type="submit">{initial.createQuote ? <FilePlus2 size={16} /> : <Save size={16} />}{initial.createQuote ? "Create draft quote" : "Save request"}</button></div><p className="form-footnote">Saved in the demo only. This does not reserve a diary slot.</p>
   </form></Modal>;
 }
 
+const QUOTE_CATEGORIES = [
+  { status: "Draft", description: "Quotes being prepared", colour: "amber" },
+  { status: "Sent", description: "Awaiting a customer response", colour: "blue" },
+  { status: "Accepted", description: "Approved and ready to book", colour: "green" },
+  { status: "Booked", description: "Confirmed in the diary", colour: "violet" },
+  { status: "Declined", description: "Quotes the customer declined", colour: "rose" },
+];
+
 export function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
-  const [filter, setFilter] = useState("All quotes");
-  const visible = quotes.filter(q => (filter === "All quotes" || q.status === filter) && `${q.id} ${q.customer.name} ${q.customer.reg} ${q.service}`.toLowerCase().includes(search.toLowerCase()));
-  return <section className="panel"><div className="panel-header"><div><h2>Quotations <span className="count">{quotes.length}</span></h2><p>Repair estimates, vehicle wrapping, PPF and fleet branding.</p></div><button className="button primary" onClick={onNew}><Plus size={16} />New quote</button></div><div className="request-filter-row"><div className="segmented">{["All quotes", "Draft", "Sent", "Accepted", "Booked", "Declined"].map(f => <button key={f} className={filter === f ? "selected" : ""} onClick={() => setFilter(f)}>{f}</button>)}</div></div><div className="table-scroll"><table><thead><tr><th>Quotation</th><th>Customer & vehicle</th><th>Work</th><th>Total</th><th>Status</th><th /></tr></thead><tbody>{visible.map(q => <tr key={q.id} onClick={() => onOpen(q.id)}><td><strong>QUO-{q.id}</strong><small className="cell-sub">REQ-{q.requestId}</small></td><td><strong>{q.customer.name}</strong><small className="cell-sub">{q.customer.reg} · {q.customer.vehicle}</small></td><td>{q.service}<small className="cell-sub">Preferred: {dateLabel(q.preferredDate)}</small></td><td><strong>{q.amount ? money(q.amount) : "To be priced"}</strong></td><td><Badge tone={tone(q.status)}>{q.status}</Badge></td><td><button className="icon-button" aria-label={`Open quote ${q.id}`} onClick={() => onOpen(q.id)}><ChevronRight size={17} /></button></td></tr>)}</tbody></table>{!visible.length && <div className="empty"><FileText size={28} /><h3>No matching quotes</h3><p>Create one from an enquiry to get started.</p></div>}</div></section>;
+  const [filter, setFilter] = useState(null);
+  const categoryQuotes = quotes.filter(q => !filter || q.status === filter);
+  const visible = categoryQuotes.filter(q => `${q.id} ${q.customer.name} ${q.customer.reg} ${q.service}`.toLowerCase().includes(search.toLowerCase()));
+  return <>
+    {!filter && <>
+      <div className="request-categories-heading"><h2>Browse by status</h2><p>Choose a category to see its quotations.</p></div>
+      <div className="request-category-grid">
+        {QUOTE_CATEGORIES.map(({ status, description, colour }, index) => {
+          const count = quotes.filter(quote => quote.status === status).length;
+          return <button className={`request-category-card request-category-${colour}`} key={status} style={{ "--card-index": index }} onClick={() => setFilter(status)} aria-label={`View ${status.toLowerCase()} quotes, ${count} ${count === 1 ? "quote" : "quotes"}`}>
+            <span className="request-category-top"><span className="request-category-icon"><ActionIcon action={status} size={23} /></span><span className="request-category-count">{count}</span></span>
+            <span className="request-category-title">{status}</span>
+            <span className="request-category-description">{description}</span>
+            <span className="request-category-link">View quotes <ArrowRight size={15} /></span>
+          </button>;
+        })}
+      </div>
+    </>}
+    {filter && <button className="request-back-button" onClick={() => setFilter(null)}><ArrowLeft size={16} />All quote categories</button>}
+    <section className="panel">
+      <div className="panel-header"><div><h2>{filter ? `${filter} quotations` : "Quotations"} <span className="count">{categoryQuotes.length}</span></h2><p>{filter ? `Showing ${filter.toLowerCase()} quotations only.` : "Repair estimates, vehicle wrapping, PPF and fleet branding."}</p></div><button className="button primary" onClick={onNew}><FilePlus2 size={16} />New quote</button></div>
+      <div className="table-scroll"><table><thead><tr><th>Quotation</th><th>Customer & vehicle</th><th>Work</th><th>Total</th><th>Status</th><th /></tr></thead><tbody>{visible.map(q => <tr key={q.id} onClick={() => onOpen(q.id)}><td><strong>QUO-{q.id}</strong><small className="cell-sub">REQ-{q.requestId}</small></td><td><strong>{q.customer.name}</strong><small className="cell-sub">{q.customer.reg} · {q.customer.vehicle}</small></td><td>{q.service}<small className="cell-sub">Preferred: {dateLabel(q.preferredDate)}</small></td><td><strong>{q.amount ? money(q.amount) : "To be priced"}</strong></td><td><Badge tone={tone(q.status)}>{q.status}</Badge></td><td><button className="icon-button" aria-label={`Open quote ${q.id}`} onClick={() => onOpen(q.id)}><ChevronRight size={17} /></button></td></tr>)}</tbody></table>{!visible.length && <div className="empty"><FileText size={28} /><h3>No matching quotes</h3><p>{search ? "Try another search." : filter ? `There are no ${filter.toLowerCase()} quotations yet.` : "Create one from an enquiry to get started."}</p></div>}</div>
+    </section>
+  </>;
 }
 
 export function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook, onOpenJob }) {
@@ -82,7 +132,7 @@ export function QuoteWorkspace({ quote, Modal, Badge, onClose, onAction, onBook,
   const action = value => setError(onAction(value, { scope, amount, duration }) || "");
   const editable = quote.status === "Draft";
   return <Modal title={`Quotation QUO-${quote.id}`} onClose={onClose}><div className="admin-dialog-content"><div className="admin-dialog-heading"><div><span className="eyebrow">{quote.service.toUpperCase()}</span><h2>{quote.customer.name}</h2></div><Badge tone={tone(quote.status)}>{quote.status}</Badge></div><div className="request-customer"><span className="vehicle-icon violet"><Paintbrush size={23} /></span><div><strong>{quote.customer.vehicle}</strong><p><span className="registration">{quote.customer.reg}</span> · {quote.customer.phone}</p></div></div><label className="form-field">Scope of work<textarea rows={4} required value={scope} disabled={!editable} onChange={e => setScope(e.target.value)} /></label><div className="form-grid"><label className="form-field">Custom quote total (£)<input type="number" min="0.01" step="0.01" required disabled={!editable} value={amount} onChange={e => setAmount(e.target.value)} placeholder="0.00" /></label><label className="form-field">Workshop time<select value={duration} disabled={!editable} onChange={e => setDuration(e.target.value)}>{[30, 60, 90, 120, 180, 240, 360, 480].map(n => <option key={n} value={n}>{n} minutes</option>)}</select></label></div><div className="quote-summary"><span>Preferred date</span><strong>{dateLabel(quote.preferredDate)}</strong></div>{error && <p className="form-error" role="alert">{error}</p>}
-    {editable && <div className="admin-actions"><button className="button secondary" onClick={() => action("save")}>Save draft</button><button className="button primary" onClick={() => action("send")}><Send size={15} />Send quote (demo)</button></div>}
+    {editable && <div className="admin-actions"><button className="button secondary" onClick={() => action("save")}><Save size={16} />Save draft</button><button className="button primary" onClick={() => action("send")}><Send size={15} />Send quote (demo)</button></div>}
     {quote.status === "Sent" && <div className="staff-decision"><h3>Record the customer’s response</h3><p>After speaking with the customer, record their decision here.</p><div className="admin-actions"><button className="button primary" onClick={() => action("accept")}><Check size={15} />Record accepted</button><button className="button secondary" onClick={() => action("decline")}><X size={15} />Record declined</button></div></div>}
     {quote.status === "Accepted" && <div className="staff-decision"><h3>Approved and ready to schedule.</h3><p>Choose a suitable time, bay and technician to confirm the visit.</p><button className="button primary" onClick={onBook}><CalendarDays size={16} />Book approved quote</button></div>}
     {quote.jobId && <button className="linked-record" onClick={() => onOpenJob(quote.jobId)}><ClipboardList size={18} /><span>Job #{quote.jobId}<small>Confirmed appointment and agreed work</small></span><ChevronRight size={17} /></button>}

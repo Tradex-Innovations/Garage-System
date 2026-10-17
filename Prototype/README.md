@@ -1,4 +1,4 @@
-# DC Motors admin prototype
+# DC Motors website and admin prototype
 
 A simple Next.js frontend for demonstrating DC Motors' staff workflow. It includes the business's logo and blue colour direction, service categories and published opening hours. All records, messages, approvals, inspection illustrations and payments are demo data or simulated actions.
 
@@ -23,7 +23,7 @@ Open the Local URL printed by Next.js. `npm run build` generates a static websit
 - Job workspace with notes, tasks, parts availability, inspection findings, staff-recorded repair approvals, invoices, payments and history.
 - Invoices with partial/full simulated payments and balance updates.
 
-This version is admin-only. Customer approvals are recorded by staff; there is no customer portal. New enquiries do not reserve a bay until staff confirm an appointment.
+The public website prototype is available at `/website/`. Customer approvals are still recorded by staff; request tracking is a local demonstration, not an authenticated production portal. New enquiries do not reserve a bay until staff confirm an appointment.
 
 ## Suggested demonstration
 
@@ -43,7 +43,7 @@ For MOT booking, **REQ-2001** includes a requested MOT preparation check. Confir
 
 Changes persist in this browser/origin. Previous v1 demo jobs are migrated while preserving work, payments and history; sample dates move to the new demo day. A reset restores fictional jobs, requests and quotes. Different browsers and origins have independent data.
 
-There is no backend, production sign-in, real website-form ingestion, messaging, official MOT lookup, payment processor or production accounting. Incoming requests can be recorded manually for the demo. Prices are illustrative totals; no production tax calculation is included. Used-car sales is outside this prototype. The diary uses one technician and bay per visit and one continuous block for wrapping/PPF work; multi-operation and multi-day planning can be added later.
+There is no backend, production sign-in, production website-form ingestion, messaging, official MOT lookup, payment processor or production accounting. Incoming requests can be recorded manually or submitted from the public website demo on the same browser and origin. Prices are illustrative totals; no production tax calculation is included. Used-car inventory remains on the client’s existing sales website, linked from the public prototype. The diary uses one technician and bay per visit and one continuous block for wrapping/PPF work; multi-operation and multi-day planning can be added later.
 
 ## Source files
 
@@ -55,3 +55,18 @@ There is no backend, production sign-in, real website-form ingestion, messaging,
 - `public/dc-motors-logo.png`: logo from the supplied DC Motors website, used for this private demo.
 
 Dependencies: Next.js, React and Lucide icons. The optional Roboto font falls back to system fonts when unavailable.
+
+## Public website prototype
+
+Open http://127.0.0.1:3000/website/ while the development server is running. The existing admin is at `/`.
+
+- Animated service cards link to six static service pages under `/website/services/`.
+- Two-step booking and quotation forms validate vehicle/contact details, reject past dates and Sundays, and save to the existing local Requests inbox. Dates are requests, not confirmed appointments.
+- Quote reference photos accept up to three JPG/PNG/WebP files of 5 MB each. Only filenames are saved; no files are uploaded.
+- Track request matches a local reference and phone number. This is a demo convenience, not authentication or a production data-security boundary.
+- SMS-update preferences are recorded only; no SMS/email messages are sent.
+- MOT checker links to GOV.UK rather than fabricating results. Invoices, car sales, WhatsApp, maps and telephone actions link to the existing external services.
+- Interactive finish comparison, colour swatches, FAQs, responsive navigation and mobile contact actions. Animation respects reduced motion.
+- Stock photography and colour treatments are illustrative. No fabricated reviews, ratings or completed-project claims are used. Asset sources are in `public/website/ASSETS.md`.
+
+Website sources: `app/website/CustomerWebsite.jsx`, `website.css`, `services.js`, and `services/[slug]/page.jsx`. The website layout has its own metadata and noindex setting for the prototype.

@@ -1,6 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": []
-}
+{"version":4,"routes":{"/website/services/mot":{},"/website/services/servicing":{},"/website/services/repairs":{},"/website/services/wrapping":{},"/website/services/ppf":{},"/website/services/branding":{}},"dynamicRoutes":{"/website/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/website/services/[slug]","routeRegex":"^\\/website\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[]}
