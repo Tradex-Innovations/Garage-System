@@ -510,13 +510,6 @@ function CustomerWebsite({ serviceSlug }) {
                                                         fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                         lineNumber: 69,
                                                         columnNumber: 178
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
-                                                        children: "Tell us what you need. We’ll agree the details with you."
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                        lineNumber: 69,
-                                                        columnNumber: 350
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
@@ -530,7 +523,7 @@ function CustomerWebsite({ serviceSlug }) {
                                             }, void 0, false, {
                                                 fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                 lineNumber: 69,
-                                                columnNumber: 427
+                                                columnNumber: 356
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -750,47 +743,6 @@ function CustomerWebsite({ serviceSlug }) {
                                                 fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                 lineNumber: 76,
                                                 columnNumber: 284
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "dc-hero-assurance",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                size: 15
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                                lineNumber: 76,
-                                                                columnNumber: 634
-                                                            }, this),
-                                                            "Honest advice"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                        lineNumber: 76,
-                                                        columnNumber: 628
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                size: 15
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                                lineNumber: 76,
-                                                                columnNumber: 679
-                                                            }, this),
-                                                            "Care in every detail"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                        lineNumber: 76,
-                                                        columnNumber: 673
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                lineNumber: 76,
-                                                columnNumber: 593
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -944,66 +896,49 @@ function CustomerWebsite({ serviceSlug }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "dc-section-heading",
                                 "data-reveal": true,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Eyebrow, {
-                                                children: "ONE WORKSHOP. EVERY DETAIL."
-                                            }, void 0, false, {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Eyebrow, {
+                                            children: "ONE WORKSHOP. EVERY DETAIL."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
+                                            lineNumber: 85,
+                                            columnNumber: 62
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            children: selected ? 'More ways to care for your car.' : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                children: [
+                                                    "Whatever your car needs.",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
+                                                        lineNumber: 85,
+                                                        columnNumber: 186
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: "We’re here for it."
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
+                                                        lineNumber: 85,
+                                                        columnNumber: 192
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                 lineNumber: 85,
-                                                columnNumber: 62
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                children: selected ? 'More ways to care for your car.' : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                    children: [
-                                                        "Whatever your car needs.",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                            lineNumber: 85,
-                                                            columnNumber: 186
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "We’re here for it."
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                            lineNumber: 85,
-                                                            columnNumber: 192
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                    lineNumber: 85,
-                                                    columnNumber: 160
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                lineNumber: 85,
-                                                columnNumber: 108
+                                                columnNumber: 160
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                        lineNumber: 85,
-                                        columnNumber: 57
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: [
-                                            "Keep it running beautifully. Make it unmistakably yours.",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                lineNumber: 85,
-                                                columnNumber: 297
-                                            }, this),
-                                            "Explore our services and let’s take it from there."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                        lineNumber: 85,
-                                        columnNumber: 238
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
+                                            lineNumber: 85,
+                                            columnNumber: 108
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/website/CustomerWebsite.jsx",
+                                    lineNumber: 85,
+                                    columnNumber: 57
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/app/website/CustomerWebsite.jsx",
                                 lineNumber: 85,
                                 columnNumber: 9
@@ -1068,13 +1003,6 @@ function CustomerWebsite({ serviceSlug }) {
                                                 lineNumber: 86,
                                                 columnNumber: 497
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: s.description
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                lineNumber: 86,
-                                                columnNumber: 515
-                                            }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "dc-card-bottom",
                                                 children: [
@@ -1083,7 +1011,7 @@ function CustomerWebsite({ serviceSlug }) {
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                         lineNumber: 86,
-                                                        columnNumber: 569
+                                                        columnNumber: 547
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "dc-card-arrow",
@@ -1092,18 +1020,18 @@ function CustomerWebsite({ serviceSlug }) {
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                             lineNumber: 86,
-                                                            columnNumber: 629
+                                                            columnNumber: 607
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                         lineNumber: 86,
-                                                        columnNumber: 597
+                                                        columnNumber: 575
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                 lineNumber: 86,
-                                                columnNumber: 537
+                                                columnNumber: 515
                                             }, this)
                                         ]
                                     }, s.slug, true, {
@@ -1392,47 +1320,24 @@ function CustomerWebsite({ serviceSlug }) {
                                             lineNumber: 91,
                                             columnNumber: 134
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "dc-text-link",
+                                            onClick: ()=>openRequest('wrapping'),
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: [
-                                                        "A bold new colour. An invisible layer of protection.",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                            lineNumber: 91,
-                                                            columnNumber: 322
-                                                        }, this),
-                                                        "A brand that moves with your business."
-                                                    ]
-                                                }, void 0, true, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"], {
+                                                    size: 18
+                                                }, void 0, false, {
                                                     fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                     lineNumber: 91,
-                                                    columnNumber: 267
+                                                    columnNumber: 335
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                    className: "dc-text-link",
-                                                    onClick: ()=>openRequest('wrapping'),
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"], {
-                                                            size: 18
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                            lineNumber: 91,
-                                                            columnNumber: 443
-                                                        }, this),
-                                                        "Let’s create your new look",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                            size: 18
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                            lineNumber: 91,
-                                                            columnNumber: 493
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
+                                                "Let’s create your new look",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                    size: 18
+                                                }, void 0, false, {
                                                     fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                     lineNumber: 91,
-                                                    columnNumber: 370
+                                                    columnNumber: 385
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -1627,14 +1532,6 @@ function CustomerWebsite({ serviceSlug }) {
                                                     lineNumber: 93,
                                                     columnNumber: 605
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "dc-finish-note",
-                                                    children: "Illustrative colour treatment using stock photography. Not a completed DC Motors project or an exact wrap sample."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/website/CustomerWebsite.jsx",
-                                                    lineNumber: 93,
-                                                    columnNumber: 630
-                                                }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     className: "dc-btn dc-primary",
                                                     onClick: ()=>setModal({
@@ -1648,7 +1545,7 @@ function CustomerWebsite({ serviceSlug }) {
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                             lineNumber: 93,
-                                                            columnNumber: 949
+                                                            columnNumber: 796
                                                         }, this),
                                                         "Make it yours",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
@@ -1656,13 +1553,13 @@ function CustomerWebsite({ serviceSlug }) {
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                             lineNumber: 93,
-                                                            columnNumber: 984
+                                                            columnNumber: 831
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/website/CustomerWebsite.jsx",
                                                     lineNumber: 93,
-                                                    columnNumber: 783
+                                                    columnNumber: 630
                                                 }, this)
                                             ]
                                         }, void 0, true, {

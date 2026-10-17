@@ -347,24 +347,6 @@
   display: flex;
 }
 
-.dc-hero-assurance {
-  color: #a7b9c5;
-  gap: 22px;
-  margin-top: 24px;
-  font-size: 11px;
-  display: flex;
-}
-
-.dc-hero-assurance > span {
-  align-items: center;
-  gap: 6px;
-  display: flex;
-}
-
-.dc-hero-assurance svg {
-  color: #58b9e1;
-}
-
 .dc-hero-caption {
   text-align: right;
   position: absolute;
@@ -450,12 +432,6 @@
   display: flex;
 }
 
-.dc-section-heading > p, .dc-section-heading > div > p:not(.dc-eyebrow) {
-  color: var(--dc-muted);
-  font-size: 13px;
-  line-height: 1.9;
-}
-
 .dc-services {
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
@@ -466,9 +442,11 @@
   border: 1px solid var(--dc-line);
   background: #fff;
   border-radius: 12px;
+  flex-direction: column;
+  min-height: 230px;
   padding: 28px 28px 19px;
   transition: transform .3s, box-shadow .3s, border-color .3s;
-  display: block;
+  display: flex;
 }
 
 .dc-service-card:hover {
@@ -514,17 +492,12 @@
   font-size: 21px;
 }
 
-.dc-service-card > p {
-  color: #7d8b94;
-  font-size: 12px;
-}
-
 .dc-card-bottom {
   color: #486577;
   border-top: 1px solid #e7edf1;
   justify-content: space-between;
   align-items: center;
-  margin-top: 28px;
+  margin-top: auto;
   padding-top: 15px;
   font-size: 11px;
   font-weight: 600;
@@ -690,10 +663,6 @@
 
 .dc-customise h2 > span {
   color: #6b95ae;
-}
-
-.dc-customise .dc-section-heading > div > p:not(.dc-eyebrow) {
-  color: #98b0c0;
 }
 
 .dc-text-link {
@@ -1326,13 +1295,6 @@
   margin: 25px 0;
   font-size: 15px;
   line-height: 1.9;
-}
-
-.dc-service-hero-grid small {
-  color: #7f909a;
-  margin-top: 15px;
-  font-size: 11px;
-  display: block;
 }
 
 .dc-service-hero-grid > img {
@@ -2298,12 +2260,6 @@
     min-height: 43px;
     font-size: 18px;
     line-height: 1.18;
-  }
-
-  .dc-service-card > p {
-    min-height: 34px;
-    font-size: 10px;
-    line-height: 1.7;
   }
 
   .dc-card-bottom {
