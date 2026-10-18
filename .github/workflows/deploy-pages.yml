@@ -1,0 +1,69 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Prototype/app/**'
+      - 'Prototype/components/**'
+      - 'Prototype/lib/**'
+      - 'Prototype/public/**'
+      - 'Prototype/package.json'
+      - 'Prototype/package-lock.json'
+      - 'Prototype/next.config.mjs'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    defaults:
+      run:
+        working-directory: Prototype
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: Prototype/package-lock.json
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: npm ci
+      - name: Build static site
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_TELEMETRY_DISABLED: '1'
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: Prototype/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4

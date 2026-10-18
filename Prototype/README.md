@@ -13,6 +13,22 @@ npm run dev
 
 Open the Local URL printed by Next.js. `npm run build` generates a static website in `out/`.
 
+## GitHub Pages
+
+The repository's `Deploy to GitHub Pages` workflow builds this folder and publishes `out/` when application files change on `main`. It can also be started manually from the Actions tab.
+
+A repository administrator must first open **Settings → Pages** and choose **GitHub Actions** as the build source. Private repositories require a GitHub plan that supports Pages for private repositories.
+
+For the default GitHub Pages domain, the admin demo is at `https://tradex-innovations.github.io/Garage-System/` and the customer website is at `https://tradex-innovations.github.io/Garage-System/website/`. These addresses become available after Pages is enabled and a deployment succeeds.
+
+The workflow supplies the Pages base path at build time. To check the same export locally, run:
+
+```sh
+NEXT_PUBLIC_BASE_PATH=/Garage-System npm run build
+```
+
+Local development keeps its existing root URLs when `NEXT_PUBLIC_BASE_PATH` is unset. Deployed forms and records still use browser storage as described below.
+
 ## Admin screens
 
 - Dashboard with jobs, approvals, ready vehicles, unpaid invoices and new enquiries.
