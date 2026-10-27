@@ -6,6 +6,7 @@ import { DEMO_DATE, STORAGE_KEY, STAGES, TECHNICIANS, BAYS, SERVICES, SAMPLE_CUS
 import { seedWorkspace, restoreWorkspace, addRequest, draftQuote, updateQuote, confirmBooking } from "../lib/business";
 import { acceptRequestedSlot, bookingConflict, proposeBookingSlot, rejectBookingRequest, replyToProposal, rescheduleAppointment, workshopDate } from "../lib/scheduling";
 import ActionIcon from "../components/ActionIcon";
+import { withBasePath } from "../lib/paths";
 import { RequestsInbox, RequestDetail, RequestForm, QuotesScreen, QuoteWorkspace, MotLookup } from "../components/AdminFeatures";
 
 const NAV = [["Dashboard", LayoutDashboard], ["Requests", Inbox], ["Diary", CalendarDays], ["Customers & Vehicles", Users], ["Quotes", FileText], ["Invoices", Receipt]];
@@ -138,7 +139,7 @@ export default function WorkshopApp() {
   return <div className="app-shell">
     {sidebarOpen && <button className="sidebar-backdrop" aria-label="Close navigation" onClick={() => setSidebarOpen(false)} />}
     <aside className={`sidebar ${sidebarOpen ? "is-open" : ""}`}>
-      <a href="#" className="brand dc-brand" aria-label="DC Motors dashboard" onClick={e => { e.preventDefault(); navigate("Dashboard"); }}><img src="/dc-motors-logo.png" alt="DC Motors UK" width="190" height="43" /></a>
+      <a href="#" className="brand dc-brand" aria-label="DC Motors dashboard" onClick={e => { e.preventDefault(); navigate("Dashboard"); }}><img src={withBasePath("/dc-motors-logo.png")} alt="DC Motors UK" width="190" height="43" /></a>
       <div className="workshop-switch"><span className="workshop-icon"><CarFront size={19} /></span><div><strong>DC Motors Ltd</strong><span>Cheltenham · Admin demo</span></div><ChevronDown size={15} /></div>
       <div className="nav-caption">WORKSPACE</div>
       <nav>{NAV.map(([name, Icon]) => <button key={name} onClick={() => navigate(name)} className={`nav-item ${page === name ? "active" : ""}`}><Icon size={19} /><span>{name}</span>{name === "Requests" && requests.some(r => r.status === "New") && <b>{requests.filter(r => r.status === "New").length}</b>}</button>)}</nav>
