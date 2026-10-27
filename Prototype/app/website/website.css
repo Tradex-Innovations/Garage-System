@@ -19,3 +19,6 @@
 .dc-site .dc-btn.dc-dark{background-color:#0c202d;color:#fff}
 .dc-site .dc-btn.dc-white{background-color:#fff;color:#125477}
 .dc-site .dc-card-arrow{color:#486577}
+
+/* Direct calendar booking and the customer-side bot conversation preview. */
+.dc-dialog .slot-picker{margin:3px 0 4px}.dc-dialog .slot-picker button{font-family:inherit}.dc-dialog .slot-picker .slot-picker-times>p{margin-bottom:0}.dc-reply-actions{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.dc-reply-actions .dc-btn{min-height:38px;padding:10px 12px;font-size:11px!important}.dc-chat-preview{margin:18px 0;padding:13px;border-radius:11px;background:#edf5f2}.dc-chat-preview>strong{display:flex;align-items:center;gap:7px;font-size:12px;color:#358767;margin-bottom:10px}.dc-chat-preview>p{width:fit-content;max-width:92%;padding:9px 11px;border-radius:9px;font-size:10px!important;margin:6px 0!important;background:#fff}.dc-chat-preview>p.out{margin-left:auto!important;background:#daf0e5}.dc-dialog .slot-picker-selected{color:#0c769f}

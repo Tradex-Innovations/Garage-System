@@ -2794,4 +2794,64 @@
   color: #486577;
 }
 
+.dc-dialog .slot-picker {
+  margin: 3px 0 4px;
+}
+
+.dc-dialog .slot-picker button {
+  font-family: inherit;
+}
+
+.dc-dialog .slot-picker .slot-picker-times > p {
+  margin-bottom: 0;
+}
+
+.dc-reply-actions {
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+  display: flex;
+}
+
+.dc-reply-actions .dc-btn {
+  min-height: 38px;
+  padding: 10px 12px;
+  font-size: 11px !important;
+}
+
+.dc-chat-preview {
+  background: #edf5f2;
+  border-radius: 11px;
+  margin: 18px 0;
+  padding: 13px;
+}
+
+.dc-chat-preview > strong {
+  color: #358767;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+}
+
+.dc-chat-preview > p {
+  background: #fff;
+  border-radius: 9px;
+  width: fit-content;
+  max-width: 92%;
+  padding: 9px 11px;
+  margin: 6px 0 !important;
+  font-size: 10px !important;
+}
+
+.dc-chat-preview > p.out {
+  background: #daf0e5;
+  margin-left: auto !important;
+}
+
+.dc-dialog .slot-picker-selected {
+  color: #0c769f;
+}
+
 /*# sourceMappingURL=app_website_website_0hf5te4039ji1.css.map*/

@@ -33,7 +33,7 @@ export const SAMPLE_CUSTOMERS = customers.map(([name, vehicle, reg, mileage, ini
   motDue: "2026-11-02", serviceDue: "2027-04-14",
 }));
 export const money = value => new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" }).format(value);
-export const dateLabel = date => new Date(`${date}T12:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+export const dateLabel = date => date && Number.isFinite(new Date(`${date}T12:00:00`).getTime()) ? new Date(`${date}T12:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "Not recorded";
 export const minutes = time => { const [h, m] = time.split(":").map(Number); return h * 60 + m; };
 export const timeLabel = value => `${String(Math.floor(value / 60)).padStart(2, "0")}:${String(value % 60).padStart(2, "0")}`;
 export const authorisedTotal = job => Math.round(job.items.filter(item => item.approval === "approved").reduce((sum, item) => sum + item.price, 0) * 100) / 100;
@@ -59,11 +59,11 @@ export function findConflict(jobs, booking, excludeId) {
   return match ? `${match.bay === booking.bay ? booking.bay : booking.technician} is already booked ${match.time}–${timeLabel(minutes(match.time) + match.duration)} for ${match.customer.reg}. Choose another time or resource.` : "";
 }
 export function createJob(id, customer, booking) {
-  const price = SERVICES[booking.service]?.quoteOnly ? Number(booking.quotePrice) : SERVICES[booking.service]?.price;
-  if (!Number.isFinite(price) || price <= 0) throw new Error("An agreed positive price is required before booking this work.");
+  const price = booking.consultation ? 0 : SERVICES[booking.service]?.quoteOnly ? Number(booking.quotePrice) : SERVICES[booking.service]?.price;
+  if (!Number.isFinite(price) || (!booking.consultation && price <= 0)) throw new Error("An agreed positive price is required before booking this work.");
   return { id, customer, date: booking.date, time: booking.time, duration: Number(booking.duration), bay: booking.bay,
     technician: booking.technician, service: booking.service, status: "Booked", waitingParts: false, motPrep: booking.motPrep || "No", requestId: booking.requestId || null, quoteId: booking.quoteId || null,
-    items: [{ id: `${id}-base`, description: booking.scope || booking.service, price, type: SERVICES[booking.service]?.quoteOnly ? "Quoted project" : "Service", approval: "approved", complete: false }],
+    items: [{ id: `${id}-base`, description: booking.scope || booking.service, price, type: booking.consultation ? "Consultation" : SERVICES[booking.service]?.quoteOnly ? "Quoted project" : "Service", approval: "approved", complete: false }],
     findings: [], notes: booking.notes ? [booking.notes] : [], estimateSent: false, invoiceIssued: false, payments: [],
     history: [`Booking created for ${dateLabel(booking.date)} at ${booking.time}.`],
   };

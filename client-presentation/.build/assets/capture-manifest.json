@@ -1,0 +1,25 @@
+{
+  "captured": "2026-10-26T10:15:45.528Z",
+  "day": "2026-10-27",
+  "source": "Local DC Motors prototype; isolated fictional demo data",
+  "screenshots": [
+    "admin-calendar.png",
+    "admin-customers.png",
+    "admin-dashboard.png",
+    "admin-inspection.png",
+    "admin-invoices.png",
+    "admin-job.png",
+    "admin-proposal.png",
+    "admin-quote.png",
+    "admin-requests.png",
+    "mobile-calendar.png",
+    "mobile-contact.png",
+    "mobile-details.png",
+    "mobile-home.png",
+    "mobile-services.png",
+    "mobile-tracking.png",
+    "website-desktop.png",
+    "website-services-desktop.png",
+    "website-wrapping-desktop.png"
+  ]
+}

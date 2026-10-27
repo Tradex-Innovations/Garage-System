@@ -3,7 +3,7 @@ import { DEMO_DATE, SAMPLE_CUSTOMERS, SERVICES, createJob, findConflict, seedJob
 export const REQUEST_TYPES = ["MOT booking", "Service booking", "Repair estimate", "Wrap / PPF / branding", "Callback"];
 export const QUOTE_SERVICES = ["Vehicle wrapping", "PPF protection", "Fleet branding", "Mechanical repair"];
 export const SERVICE_OPTIONS = ["Interim service", "Full service", "Parts replacement", "Other"];
-export const REQUEST_STATUSES = ["New", "In review", "Quoted", "Confirmed", "Closed"];
+export const REQUEST_STATUSES = ["New", "In review", "Quoted", "Confirmed", "Rejected", "Closed"];
 export const QUOTE_STATUSES = ["Draft", "Sent", "Accepted", "Declined", "Booked"];
 
 export function seedRequests() {
@@ -48,20 +48,20 @@ export function addRequest(workspace, values) {
 }
 export function draftQuote(workspace, requestId) {
   const request = workspace.requests.find(r => r.id === requestId);
-  if (!request || ["Closed", "Confirmed"].includes(request.status)) return { error: "This request is closed or already confirmed." };
+  if (!request || ["Closed", "Rejected"].includes(request.status) || (request.status === "Confirmed" && !request.consultationBooked)) return { error: "This request is closed or already confirmed." };
   const existing = workspace.quotes.find(q => q.requestId === requestId && q.status !== "Declined");
   if (existing) return { workspace, quoteId: existing.id };
   const id = Math.max(3000, ...workspace.quotes.map(q => q.id)) + 1;
   const quote = { id, requestId, customer: request.customer, service: request.service, scope: request.details,
     amount: "", preferredDate: request.preferredDate || DEMO_DATE, duration: SERVICES[request.service]?.duration || 60,
     status: "Draft", jobId: null, history: ["Draft created from the customer request."] };
-  return { quoteId: id, workspace: { ...workspace, quotes: [quote, ...workspace.quotes], requests: workspace.requests.map(r => r.id === requestId ? { ...r, quoteId: id, status: "In review", history: ["Quotation draft prepared.", ...r.history] } : r) } };
+  return { quoteId: id, workspace: { ...workspace, quotes: [quote, ...workspace.quotes], requests: workspace.requests.map(r => r.id === requestId ? { ...r, quoteId: id, status: r.consultationBooked ? "Confirmed" : "In review", history: ["Quotation draft prepared.", ...r.history] } : r) } };
 }
 export function updateQuote(workspace, id, action, fields = {}) {
   const quote = workspace.quotes.find(q => q.id === id);
   if (!quote) return { error: "Quotation not found." };
   const request = workspace.requests.find(r => r.id === quote.requestId);
-  if (!request || ["Closed", "Confirmed"].includes(request.status)) return { error: "The linked request is closed or already confirmed." };
+  if (!request || ["Closed", "Rejected"].includes(request.status) || (request.status === "Confirmed" && !request.consultationBooked)) return { error: "The linked request is closed or already confirmed." };
   if (["save", "send"].includes(action) && quote.status !== "Draft") return { error: "Only draft quotations can be edited." };
   if (["accept", "decline"].includes(action) && quote.status !== "Sent") return { error: "Send the quotation before recording a response." };
   const editing = ["save", "send"].includes(action);
@@ -75,17 +75,17 @@ export function updateQuote(workspace, id, action, fields = {}) {
   const event = { save: "Draft saved by staff.", send: "Quote sent (simulated).", accept: "Customer acceptance recorded by staff (demo).", decline: "Customer decline recorded by staff (demo)." }[action];
   return { workspace: { ...workspace,
     quotes: workspace.quotes.map(q => q.id === id ? { ...q, amount: Number(amount), scope, duration, status, history: [event, ...q.history] } : q),
-    requests: workspace.requests.map(r => r.id === quote.requestId ? { ...r, status: action === "decline" ? "In review" : action === "save" ? "In review" : "Quoted", history: [event, ...r.history] } : r),
+    requests: workspace.requests.map(r => r.id === quote.requestId ? { ...r, status: r.consultationBooked ? "Confirmed" : action === "decline" ? "In review" : action === "save" ? "In review" : "Quoted", history: [event, ...r.history] } : r),
   } };
 }
 export function confirmBooking(workspace, booking, customer) {
   const request = booking.requestId && workspace.requests.find(r => r.id === booking.requestId);
   const quote = booking.quoteId && workspace.quotes.find(q => q.id === booking.quoteId);
   if (booking.requestId && !request) return { error: "The linked request could not be found." };
-  if (request && (request.jobId || ["Closed", "Confirmed"].includes(request.status))) return { error: "This request is already confirmed or closed." };
+  if (request && (["Closed", "Rejected"].includes(request.status) || ((request.jobId || request.status === "Confirmed") && !(request.consultationBooked && booking.quoteId)))) return { error: "This request is already confirmed or closed." };
   if (booking.quoteId && (!quote || quote.status !== "Accepted" || quote.jobId)) return { error: "Record acceptance of this quotation before confirming an appointment." };
   if (quote && (!request || quote.requestId !== request.id || quote.customer.id !== customer.id)) return { error: "The quotation must match this customer request." };
-  if (request && ["Repair estimate", "Wrap / PPF / branding"].includes(request.type) && !quote) return { error: "Prepare a quotation and record acceptance before booking this request." };
+  if (request && ["Repair estimate", "Wrap / PPF / branding"].includes(request.type) && !quote && !booking.consultation) return { error: "Prepare a quotation and record acceptance before booking this request." };
   const service = quote && !SERVICES[quote.service] ? "Other" : booking.service;
   const agreed = { ...booking, service, quotePrice: quote ? quote.amount : booking.quotePrice, scope: quote ? quote.scope : booking.scope };
   const conflict = findConflict(workspace.jobs, agreed);
@@ -94,9 +94,10 @@ export function confirmBooking(workspace, booking, customer) {
   let job;
   try { job = createJob(id, customer, agreed); } catch(e) { return { error: e.message }; }
   if (quote) { job.service = quote.service; job.items[0] = { ...job.items[0], description: quote.scope, price: quote.amount, type: "Quoted project" }; }
+  if (booking.consultation) job.service = `Consultation · ${request.service}`;
   if (request?.motPrep === "Yes") job.notes.unshift("Customer requested MOT preparation before the test.");
   return { jobId: id, workspace: { ...workspace, jobs: [...workspace.jobs, job],
-    requests: workspace.requests.map(r => r.id === booking.requestId ? { ...r, status: "Confirmed", jobId: id, history: [`Appointment confirmed as job #${id}.`, ...r.history] } : r),
+    requests: workspace.requests.map(r => r.id === booking.requestId ? { ...r, status: "Confirmed", bookingState: "Confirmed", slot: { date: booking.date, time: booking.time, duration: Number(booking.duration), bay: booking.bay, technician: booking.technician }, preferredDate: booking.date, preferredTime: booking.time, proposal: null, alternatives: [], jobId: id, consultationBooked: !!booking.consultation || !!r.consultationBooked, history: [`Appointment confirmed as job #${id}.`, ...r.history] } : r),
     quotes: workspace.quotes.map(q => q.id === booking.quoteId ? { ...q, status: "Booked", jobId: id, history: [`Accepted quote booked as job #${id}.`, ...q.history] } : q),
   } };
 }
