@@ -10,13 +10,13 @@ import { addRequest, restoreWorkspace, seedWorkspace } from '../../lib/business'
 import { availableAssignment, replyToProposal } from '../../lib/scheduling';
 import SlotPicker from '../../components/SlotPicker';
 
-const icons = { ClipboardCheck, Gauge, Wrench, Paintbrush, ShieldCheck, Truck };
+const icons = { ClipboardCheck, Gauge, Wrench, Paintbrush, Truck };
 const maps = 'https://www.google.com/maps/search/?api=1&query=DC+Motors+Ltd+Neptune+Business+Park+Cheltenham+GL51+9FB';
 const whatsapp = 'https://wa.me/447598041341';
 const publicReceipts = 'dc-motors-public-demo-receipts';
 const faq = [
   ['Is my appointment confirmed when I submit a request?', 'Choose an available date and time on the calendar. The workshop reviews your request and can confirm it or offer another time. You can reply to suggested times from Track request. WhatsApp messages are simulated in this prototype.'],
-  ['Can I get a quote before bringing my car in?', 'Yes. Choose a repair, wrapping, PPF or branding quote and describe what you need. Photos can help explain your enquiry. Some work may require an inspection before a final price can be agreed.'],
+  ['Can I get a quote before bringing my car in?', 'Yes. Choose a repair, wrapping or branding quote and describe what you need. Photos can help explain your enquiry. Some work may require an inspection before a final price can be agreed.'],
   ['Do you offer MOT preparation?', 'Yes. Select MOT & preparation and let us know that you would like a preparation check. The team can discuss what your vehicle needs before the test.'],
   ['Can I pay my invoice online?', 'The View & pay invoice link opens the existing DC Motors billing website. Payments are handled there, outside this prototype.'],
   ['Where are you and when are you open?', 'Find us at Unit 02, Neptune Business Park, Cheltenham, GL51 9FB. Published opening hours are Monday to Friday, 9:30am–6pm and Saturday, 9:30am–3pm. Closed on Sunday.'],
@@ -55,7 +55,7 @@ export default function CustomerWebsite({ serviceSlug }) {
       <Link className="dc-logo" href={home} aria-label="DC Motors home"><img src={withBasePath('/dc-motors-logo.png')} width="205" height="64" alt="DC Motors UK" /></Link>
       <nav aria-label="Main navigation" className={menu ? 'dc-nav-links dc-nav-open' : 'dc-nav-links'}>
         <a href={`${withBasePath(home)}#services`} onClick={() => setMenu(false)}>Our services<ChevronDown size={13} /></a>
-        <a href={`${withBasePath(home)}#customise`} onClick={() => setMenu(false)}>Wraps & PPF</a>
+        <a href={`${withBasePath(home)}#customise`} onClick={() => setMenu(false)}>Wraps & branding</a>
         <a href={`${withBasePath(home)}#about`} onClick={() => setMenu(false)}>Our workshop</a>
         <a href={`${withBasePath(home)}#contact`} onClick={() => setMenu(false)}>Find us</a>
         <button className="dc-nav-track" onClick={() => { setMenu(false); setModal({ kind: 'track' }); }}><Search size={15} />Track request</button>
@@ -76,11 +76,11 @@ export default function CustomerWebsite({ serviceSlug }) {
           <img className="dc-hero-image" src={withBasePath('/website/hero.jpg')} alt="Black performance car on the open road" fetchPriority="high" />
           <div className="dc-hero-shade" />
           <div className="dc-hero-content"><Eyebrow light>PRECISION. PASSION. PEACE OF MIND.</Eyebrow><h1>Your car.<br /><span>Our craft.</span></h1><p>From the everyday essentials to a whole new look.<br className="dc-desktop-break" /> Expert car care, right here in Cheltenham.</p><div className="dc-hero-actions"><button className="dc-btn dc-primary" onClick={() => openRequest()}><CalendarDays size={18} />Book a service<ArrowUpRight size={18} /></button><button className="dc-btn dc-glass" onClick={() => openRequest('wrapping')}><Paintbrush size={18} />Get a custom quote</button></div></div>
-          <div className="dc-hero-caption"><span>DRIVEN BY THE DETAILS</span><p>Maintained. Protected. Personalised.</p></div>
+          <div className="dc-hero-caption"><span>DRIVEN BY THE DETAILS</span><p>Maintained. Repaired. Personalised.</p></div>
           <a className="dc-explore" href="#services" aria-label="Explore our services"><ArrowDown size={19} /></a>
           <span className="dc-hero-index">01 / THE DC DIFFERENCE</span>
         </section>
-        <div className="dc-trust-strip dc-container"><span><Wrench />Mechanical know-how</span><i /><span><ShieldCheck />Protection with purpose</span><i /><span><Paintbrush />A finish that feels like you</span><i /><span><MapPin />One Cheltenham workshop</span></div>
+        <div className="dc-trust-strip dc-container"><span><Wrench />Mechanical know-how</span><i /><span><ShieldCheck />Care with confidence</span><i /><span><Paintbrush />A finish that feels like you</span><i /><span><MapPin />One Cheltenham workshop</span></div>
       </>}
 
       <section id="services" className="dc-section dc-container">
@@ -124,7 +124,7 @@ function WebsiteDialog({ modal, close }) {
   const [receipt, setReceipt] = useState(null);
   const [tracking, setTracking] = useState(null);
   const service = services.find(s => s.slug === slug);
-  const isQuote = ['repairs', 'wrapping', 'ppf', 'branding'].includes(slug);
+  const isQuote = ['repairs', 'wrapping', 'branding'].includes(slug);
   const wantsVisit = !isQuote || form.visit;
   useEffect(() => { const element = dialog.current; element.showModal(); return () => { if (element.open) element.close(); }; }, []);
   useEffect(() => { const previous = document.body.style.overflow; document.body.style.overflow = 'hidden'; return () => { document.body.style.overflow = previous; }; }, []);

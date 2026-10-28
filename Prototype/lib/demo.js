@@ -13,7 +13,6 @@ export const SERVICES = {
   "Diagnostics": { price: 85, duration: 60 },
   "Brake repair": { price: 175, duration: 90 },
   "Vehicle wrapping": { price: null, duration: 120, quoteOnly: true },
-  "PPF protection": { price: null, duration: 120, quoteOnly: true },
   "Fleet branding": { price: null, duration: 120, quoteOnly: true },
 };
 const customers = [
