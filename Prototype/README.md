@@ -32,7 +32,7 @@ Local development keeps its existing root URLs when `NEXT_PUBLIC_BASE_PATH` is u
 ## Admin screens
 
 - Dashboard with jobs, approvals, ready vehicles, unpaid invoices and new enquiries.
-- Requests inbox for MOT/service bookings, repair estimates, wrapping/PPF/fleet-branding enquiries and callbacks.
+- Requests inbox for MOT/service bookings, repair estimates, wrapping/fleet-branding enquiries and callbacks.
 - Day/week diary, including Saturday, with bay/technician conflicts and opening-hour checks.
 - Customers and vehicle history, with a clearly labelled sample MOT lookup.
 - Quotes with custom scope/pricing, simulated sending, staff-recorded acceptance/decline and conversion to a confirmed appointment.
@@ -59,7 +59,7 @@ For MOT booking, **REQ-2001** includes a requested MOT preparation check. Confir
 
 Changes persist in this browser/origin. Previous v1 demo jobs are migrated while preserving work, payments and history; sample dates move to the new demo day. A reset restores fictional jobs, requests and quotes. Different browsers and origins have independent data.
 
-There is no backend, production sign-in, production website-form ingestion, messaging, official MOT lookup, payment processor or production accounting. Incoming requests can be recorded manually or submitted from the public website demo on the same browser and origin. Prices are illustrative totals; no production tax calculation is included. Used-car inventory remains on the client’s existing sales website, linked from the public prototype. The diary uses one technician and bay per visit and one continuous block for wrapping/PPF work; multi-operation and multi-day planning can be added later.
+There is no backend, production sign-in, production website-form ingestion, messaging, official MOT lookup, payment processor or production accounting. Incoming requests can be recorded manually or submitted from the public website demo on the same browser and origin. Prices are illustrative totals; no production tax calculation is included. Used-car inventory remains on the client’s existing sales website, linked from the public prototype. The diary uses one technician and bay per visit and one continuous block for wrapping work; multi-operation and multi-day planning can be added later.
 
 ## Source files
 
@@ -76,7 +76,7 @@ Dependencies: Next.js, React and Lucide icons. The optional Roboto font falls ba
 
 Open http://127.0.0.1:3000/website/ while the development server is running. The existing admin is at `/`.
 
-- Animated service cards link to six static service pages under `/website/services/`.
+- Animated service cards link to five static service pages under `/website/services/`.
 - Two-step booking and quotation forms validate vehicle/contact details, reject past dates and Sundays, and save to the existing local Requests inbox. Dates are requests, not confirmed appointments.
 - Quote reference photos accept up to three JPG/PNG/WebP files of 5 MB each. Only filenames are saved; no files are uploaded.
 - Track request matches a local reference and phone number. This is a demo convenience, not authentication or a production data-security boundary.

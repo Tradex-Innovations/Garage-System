@@ -1,7 +1,7 @@
 import { DEMO_DATE, SAMPLE_CUSTOMERS, SERVICES, createJob, findConflict, seedJobs } from "./demo.js";
 
-export const REQUEST_TYPES = ["MOT booking", "Service booking", "Repair estimate", "Wrap / PPF / branding", "Callback"];
-export const QUOTE_SERVICES = ["Vehicle wrapping", "PPF protection", "Fleet branding", "Mechanical repair"];
+export const REQUEST_TYPES = ["MOT booking", "Service booking", "Repair estimate", "Wrap / branding", "Callback"];
+export const QUOTE_SERVICES = ["Vehicle wrapping", "Fleet branding", "Mechanical repair"];
 export const SERVICE_OPTIONS = ["Interim service", "Full service", "Parts replacement", "Other"];
 export const REQUEST_STATUSES = ["New", "In review", "Quoted", "Confirmed", "Rejected", "Closed"];
 export const QUOTE_STATUSES = ["Draft", "Sent", "Accepted", "Declined", "Booked"];
@@ -14,17 +14,17 @@ export function seedRequests() {
   });
   return [
     { ...base(2001, 1, "MOT booking", "MOT test", "Please check the car before its MOT.", "2026-10-17"), motPrep: "Yes" },
-    base(2002, 6, "Wrap / PPF / branding", "Vehicle wrapping", "Satin dark-blue colour change. Please quote for the whole vehicle."),
-    { ...base(2003, 3, "Wrap / PPF / branding", "PPF protection", "Clear film on the bonnet, front bumper and mirrors."), status: "In review", quoteId: 3001 },
+    base(2002, 6, "Wrap / branding", "Vehicle wrapping", "Satin dark-blue colour change. Please quote for the whole vehicle."),
+    { ...base(2003, 3, "Wrap / branding", "Vehicle wrapping", "Satin black wrap for the roof and mirror caps."), status: "In review", quoteId: 3001 },
     { ...base(2004, 5, "Callback", "Mechanical repair", "Please call about a brake noise before arranging a visit."), preferredDate: "", source: "Phone" },
     base(2005, 0, "Service booking", "Interim service", "Interim service and a check of the tyre pressures."),
     base(2006, 4, "Repair estimate", "Mechanical repair", "An estimate for an intermittent engine warning light."),
-    { ...base(2007, 7, "Wrap / PPF / branding", "Fleet branding", "Company logos and contact details on one Transit van.", "2026-10-17"), status: "Quoted", quoteId: 3002 },
+    { ...base(2007, 7, "Wrap / branding", "Fleet branding", "Company logos and contact details on one Transit van.", "2026-10-17"), status: "Quoted", quoteId: 3002 },
   ];
 }
 export function seedQuotes() {
   return [
-    { id: 3001, requestId: 2003, customer: SAMPLE_CUSTOMERS[3], service: "PPF protection", scope: "Clear PPF for front bumper, bonnet and mirror caps. Includes preparation and fitting.", amount: 450, preferredDate: "2026-10-16", duration: 120, status: "Draft", jobId: null, history: ["Sample quotation drafted by staff."] },
+    { id: 3001, requestId: 2003, customer: SAMPLE_CUSTOMERS[3], service: "Vehicle wrapping", scope: "Satin black wrap for the roof and mirror caps. Includes preparation and fitting.", amount: 450, preferredDate: "2026-10-16", duration: 120, status: "Draft", jobId: null, history: ["Sample quotation drafted by staff."] },
     { id: 3002, requestId: 2007, customer: SAMPLE_CUSTOMERS[7], service: "Fleet branding", scope: "Supply and fit company branding on both sides and rear of one Ford Transit. Artwork supplied by customer.", amount: 325, preferredDate: "2026-10-17", duration: 120, status: "Sent", jobId: null, history: ["Quotation sent (simulated). Awaiting customer response."] },
   ];
 }
@@ -39,7 +39,8 @@ export function restoreWorkspace(saved) {
   })) : saved.jobs;
   const validRequests = Array.isArray(saved.requests) && saved.requests.every(r => r.customer && Array.isArray(r.history));
   const validQuotes = Array.isArray(saved.quotes) && saved.quotes.every(q => q.customer && Array.isArray(q.history));
-  return { jobs, requests: saved.version === 2 && validRequests ? saved.requests : fallback.requests, quotes: saved.version === 2 && validQuotes ? saved.quotes : fallback.quotes };
+  const requests = saved.version === 2 && validRequests ? saved.requests.map(request => request.type === "Wrap / PPF / branding" ? { ...request, type: "Wrap / branding" } : request) : fallback.requests;
+  return { jobs, requests, quotes: saved.version === 2 && validQuotes ? saved.quotes : fallback.quotes };
 }
 export function addRequest(workspace, values) {
   const id = Math.max(2000, ...workspace.requests.map(r => r.id)) + 1;
@@ -85,7 +86,7 @@ export function confirmBooking(workspace, booking, customer) {
   if (request && (["Closed", "Rejected"].includes(request.status) || ((request.jobId || request.status === "Confirmed") && !(request.consultationBooked && booking.quoteId)))) return { error: "This request is already confirmed or closed." };
   if (booking.quoteId && (!quote || quote.status !== "Accepted" || quote.jobId)) return { error: "Record acceptance of this quotation before confirming an appointment." };
   if (quote && (!request || quote.requestId !== request.id || quote.customer.id !== customer.id)) return { error: "The quotation must match this customer request." };
-  if (request && ["Repair estimate", "Wrap / PPF / branding"].includes(request.type) && !quote && !booking.consultation) return { error: "Prepare a quotation and record acceptance before booking this request." };
+  if (request && ["Repair estimate", "Wrap / branding"].includes(request.type) && !quote && !booking.consultation) return { error: "Prepare a quotation and record acceptance before booking this request." };
   const service = quote && !SERVICES[quote.service] ? "Other" : booking.service;
   const agreed = { ...booking, service, quotePrice: quote ? quote.amount : booking.quotePrice, scope: quote ? quote.scope : booking.scope };
   const conflict = findConflict(workspace.jobs, agreed);

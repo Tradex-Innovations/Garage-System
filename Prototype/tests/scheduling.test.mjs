@@ -93,7 +93,7 @@ test("NO and ambiguous messages release the proposal and hand off to staff", () 
 });
 
 test("quote categories book a consultation without inventing a project price", () => {
-  const { workspace, id } = requestAt(seedWorkspace(), "Vehicle wrapping", "Wrap / PPF / branding");
+  const { workspace, id } = requestAt(seedWorkspace(), "Vehicle wrapping", "Wrap / branding");
   const result = acceptRequestedSlot(workspace, id);
   const job = result.workspace.jobs.find(item => item.id === result.jobId);
   assert.match(job.service, /Consultation/);

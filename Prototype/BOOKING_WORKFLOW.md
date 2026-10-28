@@ -21,7 +21,7 @@ Both screens use the same browser storage on the same origin. Open them in separ
 - Opening hours are Monday–Friday 09:30–18:00, Saturday 09:30–15:00, Sunday closed.
 - The MOT lane and technician are reserved for MOT tests. Other visits can use either service ramp with its assigned technician.
 - Pending requests and active proposals reserve their assigned resources. Declines and staff handoffs release the proposed hold. Alternative options are checked again when selected.
-- Repair, wrap, PPF and branding booking requests initially reserve a consultation. Customers can also request a remote quote without a visit. The project itself needs a separate accepted quote. No project price is invented by the calendar.
+- Repair, wrap and branding booking requests initially reserve a consultation. Customers can also request a remote quote without a visit. The project itself needs a separate accepted quote. No project price is invented by the calendar.
 - Requests, decisions and simulated messages retain a history. Staff bookings also check customer request holds.
 
 ## Live WhatsApp integration boundary

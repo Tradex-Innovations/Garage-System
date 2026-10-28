@@ -8,12 +8,12 @@ import { DEMO_DATE, SAMPLE_CUSTOMERS, money, dateLabel } from "../lib/demo";
 import { REQUEST_TYPES, QUOTE_SERVICES, SERVICE_OPTIONS } from "../lib/business";
 
 const tone = status => ({ New: "blue", "In review": "amber", Quoted: "violet", Confirmed: "green", Closed: "slate", Rejected: "rose", Draft: "slate", Sent: "blue", Accepted: "green", Declined: "rose", Booked: "green" }[status] || "slate");
-const iconFor = type => type === "Callback" ? Phone : type === "Wrap / PPF / branding" ? Paintbrush : type === "Repair estimate" ? FileText : CalendarDays;
+const iconFor = type => type === "Callback" ? Phone : type === "Wrap / branding" ? Paintbrush : type === "Repair estimate" ? FileText : CalendarDays;
 const REQUEST_CATEGORIES = [
   { type: "MOT booking", description: "Tests and preparation checks", icon: CalendarDays, colour: "blue" },
   { type: "Service booking", description: "Routine care and servicing", icon: CarFront, colour: "green" },
   { type: "Repair estimate", description: "Repairs and cost enquiries", icon: Wrench, colour: "amber" },
-  { type: "Wrap / PPF / branding", description: "Wraps, protection and fleets", icon: Paintbrush, colour: "violet" },
+  { type: "Wrap / branding", description: "Wraps and fleet branding", icon: Paintbrush, colour: "violet" },
   { type: "Callback", description: "Customers waiting for a call", icon: Phone, colour: "rose" },
 ];
 
@@ -47,7 +47,7 @@ export function RequestsInbox({ requests, search, onOpen, onNew, Badge }) {
 }
 
 export function RequestDetail({ request, quote, workspace, Modal, Badge, onClose, onReview, onQuote, onBook, onComplete, onOpenQuote, onOpenJob, onBookingAction, onReply }) {
-  const needsQuote = ["Repair estimate", "Wrap / PPF / branding"].includes(request.type);
+  const needsQuote = ["Repair estimate", "Wrap / branding"].includes(request.type);
   const finished = ["Confirmed", "Closed", "Rejected"].includes(request.status);
   return <Modal title={`Request REQ-${request.id}`} onClose={onClose}>
     <div className="admin-dialog-content">
@@ -98,10 +98,10 @@ function BadgeLike({ state }) { return <span className={`booking-state ${state =
 function WrenchIcon() { return <ClipboardList size={18} />; }
 
 export function RequestForm({ initial = {}, Modal, onClose, onSave }) {
-  const [values, setValues] = useState({ type: initial.type || "MOT booking", service: initial.type === "Wrap / PPF / branding" ? "Vehicle wrapping" : initial.type === "Repair estimate" ? "Mechanical repair" : "MOT test", source: "Website", preferredDate: "2026-10-16", motPrep: "No", details: "", customerId: 1, ...SAMPLE_CUSTOMERS[0] });
+  const [values, setValues] = useState({ type: initial.type || "MOT booking", service: initial.type === "Wrap / branding" ? "Vehicle wrapping" : initial.type === "Repair estimate" ? "Mechanical repair" : "MOT test", source: "Website", preferredDate: "2026-10-16", motPrep: "No", details: "", customerId: 1, ...SAMPLE_CUSTOMERS[0] });
   const field = (key, value) => setValues(v => ({ ...v, [key]: value }));
-  const changeType = type => setValues(v => ({ ...v, type, service: type === "MOT booking" ? "MOT test" : type === "Service booking" ? "Interim service" : type === "Wrap / PPF / branding" ? "Vehicle wrapping" : "Mechanical repair" }));
-  const options = values.type === "Service booking" ? SERVICE_OPTIONS : values.type === "Wrap / PPF / branding" ? QUOTE_SERVICES.filter(s => s !== "Mechanical repair") : values.type === "MOT booking" ? ["MOT test"] : ["Mechanical repair", ...SERVICE_OPTIONS, ...QUOTE_SERVICES.filter(s => s !== "Mechanical repair")];
+  const changeType = type => setValues(v => ({ ...v, type, service: type === "MOT booking" ? "MOT test" : type === "Service booking" ? "Interim service" : type === "Wrap / branding" ? "Vehicle wrapping" : "Mechanical repair" }));
+  const options = values.type === "Service booking" ? SERVICE_OPTIONS : values.type === "Wrap / branding" ? QUOTE_SERVICES.filter(s => s !== "Mechanical repair") : values.type === "MOT booking" ? ["MOT test"] : ["Mechanical repair", ...SERVICE_OPTIONS, ...QUOTE_SERVICES.filter(s => s !== "Mechanical repair")];
   return <Modal title={initial.createQuote ? "New quotation enquiry" : "Record a customer request"} onClose={onClose}><form onSubmit={e => { e.preventDefault(); const original = SAMPLE_CUSTOMERS.find(c => c.id === Number(values.customerId)); const customer = { id: original && original.reg === values.reg.trim().toUpperCase() && original.name === values.name.trim() ? original.id : Date.now(), name: values.name.trim(), vehicle: values.vehicle.trim(), reg: values.reg.trim().toUpperCase(), phone: values.phone.trim(), email: values.email.trim(), mileage: original?.mileage || "—", initials: values.name.trim().split(/\s+/).map(x => x[0]).slice(0, 2).join(""), motDue: original?.motDue || "2026-11-02", serviceDue: original?.serviceDue || "2027-04-14" }; onSave({ customer, type: values.type, service: values.service, source: values.source, preferredDate: values.type === "Callback" ? "" : values.preferredDate, motPrep: values.type === "MOT booking" ? values.motPrep : "No", details: values.details.trim() }, initial.createQuote); }}>
     <p className="modal-description">Record a website or phone enquiry for staff to review. Use the fictional sample details for the demo.</p>
     <div className="form-grid"><label className="form-field">Request type<select value={values.type} onChange={e => changeType(e.target.value)}>{REQUEST_TYPES.map(t => <option key={t}>{t}</option>)}</select></label><label className="form-field">Source<select value={values.source} onChange={e => field("source", e.target.value)}>{["Website", "Phone", "WhatsApp", "Email"].map(s => <option key={s}>{s}</option>)}</select></label></div>
@@ -145,7 +145,7 @@ export function QuotesScreen({ quotes, search, onOpen, onNew, Badge }) {
     </>}
     {filter && <button className="request-back-button" onClick={() => setFilter(null)}><ArrowLeft size={16} />All quote categories</button>}
     <section className="panel">
-      <div className="panel-header"><div><h2>{filter ? `${filter} quotations` : "Quotations"} <span className="count">{categoryQuotes.length}</span></h2><p>{filter ? `Showing ${filter.toLowerCase()} quotations only.` : "Repair estimates, vehicle wrapping, PPF and fleet branding."}</p></div><button className="button primary" onClick={onNew}><FilePlus2 size={16} />New quote</button></div>
+      <div className="panel-header"><div><h2>{filter ? `${filter} quotations` : "Quotations"} <span className="count">{categoryQuotes.length}</span></h2><p>{filter ? `Showing ${filter.toLowerCase()} quotations only.` : "Repair estimates, vehicle wrapping and fleet branding."}</p></div><button className="button primary" onClick={onNew}><FilePlus2 size={16} />New quote</button></div>
       <div className="table-scroll"><table><thead><tr><th>Quotation</th><th>Customer & vehicle</th><th>Work</th><th>Total</th><th>Status</th><th /></tr></thead><tbody>{visible.map(q => <tr key={q.id} onClick={() => onOpen(q.id)}><td><strong>QUO-{q.id}</strong><small className="cell-sub">REQ-{q.requestId}</small></td><td><strong>{q.customer.name}</strong><small className="cell-sub">{q.customer.reg} · {q.customer.vehicle}</small></td><td>{q.service}<small className="cell-sub">Preferred: {dateLabel(q.preferredDate)}</small></td><td><strong>{q.amount ? money(q.amount) : "To be priced"}</strong></td><td><Badge tone={tone(q.status)}>{q.status}</Badge></td><td><button className="icon-button" aria-label={`Open quote ${q.id}`} onClick={() => onOpen(q.id)}><ChevronRight size={17} /></button></td></tr>)}</tbody></table>{!visible.length && <div className="empty"><FileText size={28} /><h3>No matching quotes</h3><p>{search ? "Try another search." : filter ? `There are no ${filter.toLowerCase()} quotations yet.` : "Create one from an enquiry to get started."}</p></div>}</div>
     </section>
   </>;

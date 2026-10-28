@@ -77,7 +77,7 @@ export function acceptRequestedSlot(workspace, id, chosen) {
   const slot = availableAssignment(workspace, desired.date, desired.time, request.service, { duration: desired.duration, excludeRequestId: id });
   if (!slot) return { error: "That slot is no longer available. Choose another time." };
   const quote = workspace.quotes.find(item => item.id === request.quoteId);
-  const consultation = ["Repair estimate", "Wrap / PPF / branding"].includes(request.type) && quote?.status !== "Accepted";
+  const consultation = ["Repair estimate", "Wrap / branding"].includes(request.type) && quote?.status !== "Accepted";
   const bookingService = consultation ? "Other" : request.service;
   const result = confirmBooking(workspace, { ...slot, service: bookingService, requestId: id, quoteId: consultation ? null : request.quoteId || null, consultation, scope: consultation ? `Initial consultation for ${request.service}` : request.details, notes: request.details, motPrep: request.motPrep }, request.customer);
   if (result.error) return result;
